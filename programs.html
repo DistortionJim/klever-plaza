@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+	<meta charset="UTF-8">
+	<title>Goodwin</title>
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/app.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body>
+ 
+	<header class="header">
+		<div class="container">
+			<a href="/" class="header__logo">
+				<img src="images/logo.svg" alt="Goodwin">
+			</a>
+
+			<div class="header__left">
+				<div class="h-user">
+					<div class="h-user__level">
+						<span>3</span>
+						<div class="h-user__level-text">уровень</div>
+					</div>
+					<div class="h-user__left">
+						<div class="h-user__name">Константин Петров</div>
+						<div class="h-user__id">
+							<span>Id</span> 134AbbdksBcs
+						</div>
+					</div>
+				</div>
+
+				<div class="h-purses">
+					<div class="h-purse h-purse--white">
+						<div class="h-purse__btn">
+							<svg class="h-purse__icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.17285 21.122V6.32812C2.17285 4.11898 3.96371 2.32812 6.17285 2.32812H17.6495C19.8586 2.32812 21.6495 4.11899 21.6495 6.32813V7.02661" stroke="#4E4E4E" stroke-width="3"/>
+								<path d="M2.17285 7.31396V22.1079C2.17285 24.317 3.96371 26.1079 6.17285 26.1079H21.8417C24.0509 26.1079 25.8417 24.317 25.8417 22.1079V11.314C25.8417 9.10483 24.0509 7.31396 21.8417 7.31396H8.63334" stroke="#4E4E4E" stroke-width="3" stroke-linecap="round"/>
+								<path d="M21.3757 20.0068C19.5553 20.0068 18.0796 18.5311 18.0796 16.7108C18.0796 14.8904 19.5553 13.4147 21.3757 13.4147L27.2446 13.4147C27.4871 13.4147 27.6837 13.6113 27.6837 13.8538L27.6837 19.5677C27.6837 19.8102 27.4871 20.0068 27.2446 20.0068L21.3757 20.0068Z" fill="#F8F8F8" stroke="#4E4E4E" stroke-width="3"/>
+							</svg>
+
+							<svg class="h-purse__icon-chevron" width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="11.5405" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.5405 0.777344)" fill="#4E4E4E"/>
+								<rect x="22.8933" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 22.8933 12.145)" fill="#4E4E4E"/>
+							</svg>
+
+
+							<div class="h-purse-item h-purse-item--white">
+								<div class="h-purse-item__title">White-кошелек</div>
+								<div class="h-purse-item__value">1 339 999<span> GС</span></div>
+							</div>
+						</div>
+
+						<div class="h-purse__container h-purse-info">
+							<div class="h-purse-info-header">
+								<div class="h-purse-info-header__left">
+									<div class="h-purse-info-header__title">White-кошелек</div>
+									<div class="h-purse-info-header__value">
+										4 444 999<span>GC</span>
+									</div>
+									<div class="h-purse-info-header__text">Всего</div>
+								</div>
+								<div class="h-purse-info-header__right">Для участия в программах пополните White-кошелек</div>
+							</div>
+							<div class="h-purse-info-history">
+								<div class="h-purse-info-history__title">История</div>
+								<ul class="h-purse-info-history__list">
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">10 345 GC</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">1 345 $</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">10 345 GC</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+								</ul>
+							</div>
+							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--dark btn">
+								<img src="images/icon-top-up.svg" alt="top-up">
+								Пополнить
+							</a>
+						</div>
+					</div>
+					<div class="h-purse h-purse--green">
+						<div class="h-purse__btn">
+							<svg class="h-purse__icon" width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.74902 21.122V6.32812C1.74902 4.11898 3.53988 2.32812 5.74902 2.32812H17.2256C19.4348 2.32812 21.2256 4.11899 21.2256 6.32813V7.02661" stroke="white" stroke-width="3"/>
+								<path d="M1.74902 7.31396V22.1079C1.74902 24.317 3.53989 26.1079 5.74903 26.1079H21.4179C23.6271 26.1079 25.4179 24.317 25.4179 22.1079V11.314C25.4179 9.10483 23.6271 7.31396 21.4179 7.31396H8.20951" stroke="white" stroke-width="3" stroke-linecap="round"/>
+								<path d="M20.9518 20.0068C19.1315 20.0068 17.6558 18.5311 17.6558 16.7108C17.6558 14.8904 19.1315 13.4147 20.9518 13.4147L26.8208 13.4147C27.0633 13.4147 27.2599 13.6113 27.2599 13.8538L27.2599 19.5677C27.2599 19.8102 27.0633 20.0068 26.8208 20.0068L20.9518 20.0068Z" fill="#14D279" stroke="white" stroke-width="3"/>
+							</svg>
+
+							<svg class="h-purse__icon-chevron" width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="11.709" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.709 0.777344)" fill="white"/>
+								<rect x="23.0618" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 23.0618 12.145)" fill="white"/>
+							</svg>
+
+
+							<div class="h-purse-item h-purse-item--green">
+								<div class="h-purse-item__title">Green-кошелек</div>
+								<div class="h-purse-item__value">444 999<span> GС</span></div>
+							</div>
+						</div>
+						<div class="h-purse__container h-purse-info">
+							<div class="h-purse-info-header">
+								<div class="h-purse-info-header__left">
+									<div class="h-purse-info-header__title">Green-кошелек</div>
+									<div class="h-purse-info-header__value">
+										4 444 999<span>GC</span>
+									</div>
+									<div class="h-purse-info-header__text">Всего</div>
+								</div>
+
+								<div class="h-purse-info-header__right">
+									Вся прибыль по программам и бонусам начисляется в Green-кошелек
+								</div>
+							</div>
+
+							<div class="h-purse-info-blocks">
+								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--dark">
+									<div class="h-purse-info-blocks__title">Доступно</div>
+									<div class="h-purse-info-blocks__value">325 345 GC</div>
+									<a href="#modal-withdraw-money" data-fancybox class="h-purse-info-blocks__text">
+										<img src="images/icon-withdraw.svg" alt="Вывести">
+										Вывести
+									</a>
+								</div>
+								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--light">
+									<div class="h-purse-info-blocks__title">Заморожено</div>
+									<div class="h-purse-info-blocks__value">25 345 GC</div>
+									<div class="h-purse-info-blocks__text">
+										<img src="images/icon-clock.svg" alt="icon">
+										35 дней
+									</div>
+								</div>
+							</div>
+
+							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--white btn">
+								<img src="images/icon-reinvest.svg" alt="reinvest">
+								Реинвестировать
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hamburger-menu">
+					<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="21.51" y="19.333" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 19.333)" fill="#2ADF91"/>
+						<rect x="21.51" y="10.0552" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 10.0552)" fill="#2ADF91"/>
+						<rect x="21.51" y="0.777344" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 0.777344)" fill="#2ADF91"/>
+					</svg>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<aside class="sidebar">
+		<div class="sidebar__close">
+			<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="15.4709" y="0.316895" width="3.65264" height="20.7284" rx="1" transform="rotate(45 15.4709 0.316895)" fill="#2ADF91"/>
+				<rect x="18.0535" y="14.9741" width="3.65264" height="20.7284" rx="1" transform="rotate(135 18.0535 14.9741)" fill="#2ADF91"/>
+			</svg>
+		</div>
+
+		<a href="/" class="sidebar__logo">
+			<img src="images/logo.svg" alt="Goodwin">
+		</a>
+
+		<div class="sidebar__inner">
+			<div class="s-user-info">
+				<div class="s-user-info__container">
+					<div class="s-user-info__name">Константин Петров</div>
+				</div>
+				<div class="s-user-info__id">
+					Id <span>134AbbdksBcs</span>
+				</div>
+			</div>
+
+			<nav class="sidebar__nav">
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-main.svg" alt="icon">
+						</span>
+							Главная
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link active">
+						<span class="menu__icon">
+							<img src="images/icon-menu-programs.svg" alt="icon">
+						</span>
+							Программы
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-partners.svg" alt="icon">
+						</span>
+							Партнеру
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-profile.svg" alt="icon">
+						</span>
+							Профиль
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-exit.svg" alt="icon">
+						</span>
+							Выйти
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="s-purses">
+				<div class="s-purse s-purse--white">
+					<div class="s-purse__title">White-кошелек</div>
+					<div class="s-purse__value">39 999<span> GС</span></div>
+					<a href="#modal-replenish-white-purse" data-fancybox class="s-purse__text">
+						<img src="images/icon-replenish.svg" alt="Пополнить">
+						Пополнить
+					</a>
+				</div>
+				<div class="s-purse s-purse--green">
+					<div class="s-purse__title">Green-кошелек</div>
+					<div class="s-purse__value">444 999<span> GC</span></div>
+					<a href="#modal-withdraw-money" data-fancybox class="s-purse__text">
+						<img src="images/icon-withdraw2.svg" alt="Вывести">
+						Вывести
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+
+
+	</aside>
+
+	<main class="main">
+		<div class="container">
+			<h1 class="main-title">Программы</h1>
+			<div class="row programs--row">
+				<div class="programs-col-left">
+					<div class="program-start block block--white">
+						<div class="program-start__header block block--black">
+							<h4 class="program-start__title">Запуск программы</h4>
+							<div class="program-start__subtitle">Выберите программу</div>
+						</div>
+
+						<div class="program-list">
+							<div class="program-list__header">
+								<div class="program-item block block--white">
+									<div class="program-item__top">
+										<div class="program-item__name">12 / 1</div>
+										<div class="program-item__from">от 100 GC</div>
+										<div class="program-item__num">1</div>
+									</div>
+									<div class="program-item__bottom">
+										<div class="program-item__days">бессрочно</div>
+										<div class="program-item__income"><span>15%</span> доход</div>
+									</div>
+								</div>
+								<div class="program-item block block--white program-item--disabled">
+									<div class="program-item__top">
+										<div class="program-item__icon-soon"><img src="images/icon-clock-3.svg" alt="icon"></div>
+										<div class="program-item__num">2</div>
+									</div>
+									<div class="program-item__bottom">
+										<div class="program-item__soon">Скоро</div>
+									</div>
+								</div>
+								<div class="program-item block block--white program-item--disabled">
+									<div class="program-item__top">
+										<div class="program-item__icon-soon"><img src="images/icon-clock-3.svg" alt="icon"></div>
+										<div class="program-item__num">3</div>
+									</div>
+									<div class="program-item__bottom">
+										<div class="program-item__soon">Скоро</div>
+									</div>
+								</div>
+								<div class="program-item block block--white program-item--disabled">
+									<div class="program-item__top">
+										<div class="program-item__icon-soon"><img src="images/icon-clock-3.svg" alt="icon"></div>
+										<div class="program-item__num">4</div>
+									</div>
+									<div class="program-item__bottom">
+										<div class="program-item__soon">Скоро</div>
+									</div>
+								</div>
+								<div class="program-item block block--white program-item--disabled">
+									<div class="program-item__top">
+										<div class="program-item__icon-soon"><img src="images/icon-clock-3.svg" alt="icon"></div>
+										<div class="program-item__num">5</div>
+									</div>
+									<div class="program-item__bottom">
+										<div class="program-item__soon">Скоро</div>
+									</div>
+								</div>
+								<div class="program-item block block--white program-item--disabled">
+									<div class="program-item__top">
+										<div class="program-item__icon-soon"><img src="images/icon-clock-3.svg" alt="icon"></div>
+										<div class="program-item__num">5</div>
+									</div>
+									<div class="program-item__bottom">
+										<div class="program-item__soon">Скоро</div>
+									</div>
+								</div>
+							</div>
+							<div class="program-list__container">
+								<div class="program-list__content">
+									<div class="program-list-info">
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Условия<br>запуска</div>
+											<div class="program-list-info__value">100<span> GC</span></div>
+											<div class="program-list-info__subtext">мин. депозит</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Срок<br>проведения</div>
+											<div class="program-list-info__value"><span>Бессрочно</span></div>
+											<div class="program-list-info__subtext">будни</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>в день</div>
+											<div class="program-list-info__value">0,6 <span>%</span></div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>за месяц</div>
+											<div class="program-list-info__value">12 <span>%</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="program-list__content program-list__content--disabled">
+									<div class="program-list-info">
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Условия<br>запуска</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">мин. депозит</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Срок<br>проведения</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">будни</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>в день</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>за месяц</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+									</div>
+								</div>
+								<div class="program-list__content program-list__content--disabled">
+									<div class="program-list-info">
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Условия<br>запуска</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">мин. депозит</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Срок<br>проведения</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">будни</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>в день</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>за месяц</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+									</div>
+								</div>
+								<div class="program-list__content program-list__content--disabled">
+									<div class="program-list-info">
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Условия<br>запуска</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">мин. депозит</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Срок<br>проведения</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">будни</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>в день</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>за период</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+									</div>
+								</div>
+								<div class="program-list__content program-list__content--disabled">
+									<div class="program-list-info">
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Условия<br>запуска</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">мин. депозит</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Срок<br>проведения</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">будни</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>в день</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>за период</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+									</div>
+								</div>
+								<div class="program-list__content program-list__content--disabled">
+									<div class="program-list-info">
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Условия<br>запуска</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">мин. депозит</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Срок<br>проведения</div>
+											<div class="program-list-info__value">-</div>
+											<div class="program-list-info__subtext">будни</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>в день</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+										<div class="program-list-info__item">
+											<div class="program-list-info__title">Доход<br>за месяц</div>
+											<div class="program-list-info__value">-</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="program-replenishment">
+							<div class="program-replenishment__inner">
+								<div class="program-replenishment__head">
+									<h3 class="program-replenishment__title">Пополните депозит программы:</h3>
+									<div class="program-replenishment__value-wrap">
+										<div class="program-replenishment__all">Всего</div>
+										<div class="program-replenishment__value">1 579 999<span> GC</span></div>
+										<div class="program-replenishment__commission">
+											Комиссия: <span>259</span> GC
+										</div>
+									</div>
+								</div>
+								<div class="program-replenishment__purses">
+									<div class="replenishment-purse replenishment-purse--white block block--white">
+										<h4 class="replenishment-purse__title">White-кошелек</h4>
+										<div class="replenishment-purse__range range">
+											<input type="range"
+												   class="replenishment-purse__range"
+												   min="100"
+												   max="1567"
+												   value="500">
+											<div class="range__footer">
+												<div class="range__min">100<span> GC</span></div>
+												<div class="range__max">MAX</div>
+											</div>
+										</div>
+									</div>
+									<div class="replenishment-purse replenishment-purse--green block block--green">
+										<h4 class="replenishment-purse__title">Green-кошелек</h4>
+										<div class="replenishment-purse__range range range--light">
+											<div class="range__text">Заморожено</div>
+											<input type="range"
+												   class="replenishment-purse__range"
+												   min="100"
+												   max="2500"
+												   value="1777">
+											<div class="range__footer">
+												<div class="range__min">100<span> GC</span></div>
+												<div class="range__max">MAX</div>
+											</div>
+										</div>
+
+										<div class="replenishment-purse__range range range--light">
+											<div class="range__text">Доступно</div>
+											<input type="range"
+												   class="replenishment-purse__range"
+												   min="100"
+												   max="2800"
+												   value="2200">
+											<div class="range__footer">
+												<div class="range__min">100<span> GC</span></div>
+												<div class="range__max">MAX</div>
+											</div>
+										</div>
+										<div class="replenishment-purse__commission">Комиссия: 5%</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="program-replenishment__footer">
+								<div class="program-replenishment__subtext">
+									При реинвесте с раздела «Доступно» взимается комиссия:
+									до 1000 GC - 3%, с 1000 GC до 2999 GC - 2%, с 3000 GC до 4999 GC - 1%,
+									более 5000 GC - 0%.
+								</div>
+								<a href="#modal-add-program" data-fancybox class="program-replenishment__btn btn btn--dark">Запустить  прграмму</a>
+							</div>
+						</div>
+					</div>
+			</div>
+				<div class="programs-col-right">
+					<div class="programs-col-left__inner">
+						<div class="programs-col-left__header">
+							<div class="programs__top-titles">
+								<div class="programs__title-wrap">
+									<h6 class="programs__title">Исполняются</h6>
+									<span>12</span>
+								</div>
+								<div class="programs__title-wrap">
+									<h6 class="programs__title">Ожидают</h6>
+									<span>2</span>
+								</div>
+							</div>
+							<div class="programs__top-values">
+								<div class="programs__top-value-item">
+									<div class="programs__top-value">123 000<span> GC</span></div>
+									<div class="programs__top-value-subtext">Прибыль всего</div>
+								</div>
+								<div class="programs__top-value-item">
+									<div class="programs__top-value">87 000<span> GC</span></div>
+									<div class="programs__top-value-subtext">Ожидаемая прибыль от всех программ</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="program-info">
+							<div class="program-info__item block block--white">
+								<div class="program-info__col">
+									<div class="program-info__num">12/1</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">1000<span> GC</span></div>
+										<div class="program-info__value-text">Депозит</div>
+									</div>
+								</div>
+								<div class="program-info__col">
+									<div class="program-info__start">
+										<div class="program-info__date">15 05 2021</div>
+										<div class="program-info__subtext">start</div>
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">31<span> GC</span> <span>10%</span></div>
+										<div class="program-info__value-text">Прибыль всего</div>
+									</div>
+								</div>
+								<div class="program-info__col">
+									<div class="program-info__finish">
+										<img src="images/icon-clock-2.svg" alt="icon"> всего <span>5</span> дней<br>
+										<span>10</span> часов
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">5,08<span> GC</span> <span>0.6%</span></div>
+										<div class="program-info__value-text">Прибыль за день</div>
+									</div>
+								</div>
+							</div>
+							<div class="program-info__item block block--white">
+								<div class="program-info__col">
+									<div class="program-info__num">18/1</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">100<span> GC</span></div>
+										<div class="program-info__value-text">Депозит</div>
+									</div>
+								</div>
+								<div class="program-info__col">
+									<div class="program-info__start">
+										<div class="program-info__date">15 05 2021</div>
+										<div class="program-info__subtext">start</div>
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">31<span> GC</span> <span>10%</span></div>
+										<div class="program-info__value-text">Прибыль всего</div>
+									</div>
+								</div>
+								<div class="program-info__col">
+									<div class="program-info__finish">
+										<img src="images/icon-clock-2.svg" alt="icon"> всего <span>5</span> дней<br>
+										<span>10</span> часов
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">5,08<span> GC</span> <span>0.6%</span></div>
+										<div class="program-info__value-text">Прибыль за день</div>
+									</div>
+								</div>
+							</div>
+							<div class="program-info__item block block--white">
+								<div class="program-info__col">
+									<div class="program-info__num">12/1</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">1000<span> GC</span></div>
+										<div class="program-info__value-text">Депозит</div>
+									</div>
+								</div>
+								<div class="program-info__col">
+									<div class="program-info__start">
+										<div class="program-info__date">15 05 2021</div>
+										<div class="program-info__subtext">start</div>
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">31<span> GC</span> <span>10%</span></div>
+										<div class="program-info__value-text">Прибыль всего</div>
+									</div>
+								</div>
+								<div class="program-info__col">
+									<div class="program-info__finish">
+										<img src="images/icon-clock-2.svg" alt="icon"> всего <span>5</span> дней<br>
+										<span>10</span> часов
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">5,08<span> GC</span> <span>0.6%</span></div>
+										<div class="program-info__value-text">Прибыль за день</div>
+									</div>
+								</div>
+							</div>
+							<div class="program-info__item program-info__item--disabled block block--white">
+								<div class="program-info__top">
+									<div class="program-info__num">8/1</div>
+									<div class="program-info__dates">
+										<div class="program-info__start">
+											<div class="program-info__date">15 05 2021</div>
+											<div class="program-info__subtext">start</div>
+										</div>
+									</div>
+								</div>
+								<div class="program-info__bottom">
+									<div class="program-info__value-col">
+										<div class="program-info__value">1000<span> GC</span></div>
+										<div class="program-info__value-text">Депозит</div>
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">10 дней</div>
+										<div class="program-info__value-text">До начала</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="program-info__item program-info__item--weekend block block--white">
+								<div class="program-info__top">
+									<div class="program-info__num">8/1</div>
+									<div class="program-info__dates">
+										<div class="program-info__start">
+											всего <span>5</span> дней<br>
+											<span>10</span> часов
+										</div>
+									</div>
+								</div>
+								<div class="program-info__bottom">
+									<div class="program-info__value-col">
+										<div class="program-info__value">1000<span> GC</span></div>
+										<div class="program-info__value-text">Депозит</div>
+									</div>
+									<div class="program-info__value-col">
+										<div class="program-info__value">Выходные</div>
+										<div class="program-info__value-text">Начисление продолжится в Понедельник</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="modal modal--replenish-purse block block--grey" id="modal-replenish-white-purse">
+		<form class="modal__form form" id="replenish-white-purse-btc">
+			<div class="replenish-purse">
+				<div class="replenish-purse__left">
+					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
+					<div class="replenish-purse__tab">
+						<span class="active">BTC</span><span>USDT (TRC-20)</span>
+					</div>
+					<div class="form__input-title">1 <span>GC</span> = 1$</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="replenish">
+					</div>
+					<div class="input__subtext">Введите сумму</div>
+				</div>
+				<div class="block block--white">
+					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
+					<div class="replenish-purse__value">79 999 <span>GС</span></div>
+					<div class="replenish-purse__btc">BTC <span>0.9999999</span></div>
+					<div class="replenish-purse__commission">Комиссия 3%</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
+					</div>
+
+				</div>
+			</div>
+
+		</form>
+		<form class="modal__form form" id="replenish-white-purse-usdt">
+			<div class="replenish-purse">
+				<div class="replenish-purse__left">
+					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
+					<div class="replenish-purse__tab">
+						<span>BTC</span><span class="active">USDT (TRC-20)</span>
+					</div>
+					<div class="form__input-title">1 <span>GC</span> = 1$</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="replenish">
+					</div>
+					<div class="input__subtext">Введите сумму</div>
+				</div>
+				<div class="block block--white">
+					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
+					<div class="replenish-purse__value">78 888 <span>GС</span></div>
+					<div class="replenish-purse__btc">BTC <span>0.8888</span></div>
+					<div class="replenish-purse__commission">Комиссия 3%</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
+					</div>
+
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="modal modal--withdraw-money block block--grey" id="modal-withdraw-money">
+		<div class="modal__inner" id="withdraw-money">
+			<div class="withdraw-money">
+				<div class="block block--green">
+					<h5 class="withdraw-money__title">Доступно для вывода с<br>Green-кошелька</h5>
+					<div class="withdraw-money__value">1 579 999 <span>GC</span></div>
+					<div class="withdraw-money__commission">Комиссия 3%</div>
+					<div class="withdraw-money__subtitle">Временно заморожено</div>
+					<div class="withdraw-money__frozen">3099 <span>GC</span></div>
+					<div class="withdraw-money__text">в соответствии с условиями выплат  Вы получите уведомление о разморозке в кабинет и в Telegram</div>
+				</div>
+				<div class="withdraw-money__right">
+					<div class="withdraw-money__tab">
+						<span class="active">BTC</span><span>USDT (TRC-20)</span>
+					</div>
+					<div class="withdraw-money__forms">
+						<form class="withdraw-money__form" id="withdraw-money-btc">
+							<div class="form__row">
+								<input type="text" class="form__input input" name="purse_address">
+							</div>
+							<div class="form__subtext">адрес вашего BTC кошелька</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="withdrawal_amount">
+							</div>
+							<div class="form__subtext">Сумма вывода</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+							</div>
+						</form>
+						<form class="withdraw-money__form" id="withdraw-money-usdt">
+							<div class="form__row">
+								<input type="text" class="form__input input" name="purse_address">
+							</div>
+							<div class="form__subtext">адрес вашего USDT кошелька</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="withdrawal_amount">
+							</div>
+							<div class="form__subtext">Сумма вывода</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal modal--going-to-make block block--grey" id="modal-going-to-make">
+		<div class="going-to-make">
+			<div class="going-to-make__top">
+				<div class="going-to-make__left">
+					<h5 class="going-to-make__title">Вы собираетесь<br>внести</h5>
+					<div class="going-to-make__row">
+						<div class="going-to-make__value">79 999<span> GС</span></div>
+						<div class="going-to-make__sum">
+							<div class="going-to-make__sum-text">Сумма к оплате</div>
+							<div class="going-to-make__sum-value">BTC <span>0.9999999</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="going-to-make__right block block--green">
+					<div class="going-to-make__subtitle">Для пополнения осталось</div>
+					<div class="going-to-make__time">
+						<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.66619 4.58154C3.54655 4.58154 1.01758 7.11051 1.01758 10.2302C1.01758 13.3498 3.54655 15.8788 6.66619 15.8788C9.78583 15.8788 12.3148 13.3498 12.3148 10.2302C12.3148 7.11051 9.78583 4.58154 6.66619 4.58154Z" fill="#11D076" stroke="white" stroke-width="2"/>
+							<rect x="5.00043" y="4.9292" width="4.45145" height="3.33192" rx="1.66596" transform="rotate(-90 5.00043 4.9292)" fill="white"/>
+							<rect x="2.9834" y="0.300781" width="7.36639" height="2.40288" rx="1.20144" fill="white"/>
+							<rect x="4.90454" y="10.291" width="4.20375" height="2.40288" rx="1.20144" transform="rotate(-45 4.90454 10.291)" fill="white"/>
+						</svg>
+						19:30
+					</div>
+				</div>
+			</div>
+			<div class="going-to-make-code">
+				<div class="going-to-make-code__text">Для того, чтобы пополнить баланс скопируйте адрес кошелька</div>
+				<div class="going-to-make-code__fill">
+					<button class="going-to-make-code__btn" data-link="урц5y4iovw9ucgp9suj959pecu9ugm49gz">
+						<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="5.41013" y="1.51367" width="11.1389" height="13.373" rx="3" stroke="#2ADF91" stroke-width="2"/>
+							<rect x="1.12891" y="5.8584" width="11.1389" height="13.373" rx="3" fill="white" stroke="#2ADF91" stroke-width="2"/>
+						</svg>
+					</button>
+					<div class="going-to-make-code__value">урц5y4iovw9ucgp9suj959pecu9ugm49gz</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal--add-program block block--grey" id="modal-add-program">
+		<div class="add-program">
+
+			<div class="add-program__col">
+				<div class="add-program__top">
+					<h3 class="add-program__title">Программа: <span>12/1</span></h3>
+					<div class="add-program__dates">
+						<div class="add-program__date">
+							15 05 2021
+							<span>start</span>
+						</div>
+						<div class="add-program__date">
+							18 07 2021
+							<span>finish</span>
+						</div>
+					</div>
+					<div class="add-program__sum">
+						<div class="add-program__value">1 579 999 <span>GC</span></div>
+						<div class="add-program__subtext">Сумма к пополнению депозита программы</div>
+					</div>
+				</div>
+
+				<div class="add-program__bottom">
+					<div class="add-program__buttons">
+						<button class="form__submit btn btn--green">Подтвердить</button>
+						<button class="form__submit btn btn--grey" data-fancybox-close>Отменить</button>
+					</div>
+					<div class="add-program__info">После запуска программы отменить действие или вывести средства до окончания программы будет нельзя!</div>
+				</div>
+			</div>
+
+			<div class="add-program__middle">
+				<div class="add-program-purse block block--green">
+					<h6 class="add-program-purse__title">Green-кошелек</h6>
+					<div class="add-program-purse__value">879 999 <span>GC</span></div>
+					<div class="add-program-purse__text">с учетом комиссии 5%<br>за реинвест
+					</div>
+				</div>
+				<div class="add-program-purse block block--white">
+					<h6 class="add-program-purse__title">White-кошелек</h6>
+					<div class="add-program-purse__value">795 999 <span>GC</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
+ 
+	<script src="js/app.min.js"></script>
+ 
+</body>
+</html>

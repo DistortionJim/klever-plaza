@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+	<meta charset="UTF-8">
+	<title>Goodwin</title>
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/app.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body>
+
+	<header class="auth-header">
+		<div class="container">
+			<a href="/" class="auth-header__logo">
+				<img src="images/logo.svg" alt="Goodwin">
+			</a>
+		</div>
+	</header>
+
+	<main class="main auth">
+		<div class="auth__container">
+			<h1 class="auth__title">Инвестируйте вместе с автоматизированной платформой GoodWin</h1>
+			<form class="form block block--white" id="sign-in">
+				<h5 class="form__title">Вход</h5>
+				<div class="form__row">
+					<input type="email" class="form__input input" name="email" placeholder="E-mail">
+				</div>
+				<div class="form__row">
+					<input type="password" class="form__input input" name="password" placeholder="Пароль">
+				</div>
+				<div class="form__row">
+					<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+				</div>
+				<div class="form__row">
+					<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+				</div>
+				<div class="form__row">
+					<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+				</div>
+				<div class="form__row">
+					<button type="submit" class="form__submit btn btn--green">Войти</button>
+				</div>
+				<div class="form__row text-center">
+					<a href="#" class="form__registration">Регистрация</a>
+				</div>
+
+				<ul class="auth-socials">
+					<li class="auth-socials__item">
+						<a href="#" class="auth-socials__link">
+							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.3525 0.618809C9.26908 0.618809 3.49228 0.078081 1.28577 5.73647C0.374348 8.07349 0.506705 11.1086 0.506705 15.4545C0.506705 19.2681 0.3844 22.8523 1.28577 25.1709C3.48725 30.8326 9.31097 30.2902 15.3491 30.2902C21.1745 30.2902 27.1809 30.8962 29.4142 25.1709C30.3273 22.8104 30.1932 19.8205 30.1932 15.4545C30.1932 9.65885 30.5132 5.91728 27.7002 3.10817C24.852 0.26223 21.0003 0.618809 15.3458 0.618809H15.3525ZM14.0222 3.29232C26.7117 3.27223 28.3268 1.86265 27.4355 21.4444C27.1189 28.3701 21.8413 27.61 15.3542 27.61C3.52579 27.61 3.18568 27.2719 3.18568 15.4478C3.18568 3.48651 4.12391 3.29901 14.0222 3.28897V3.29232ZM23.2772 5.75489C22.2937 5.75489 21.4962 6.55175 21.4962 7.53444C21.4962 8.51712 22.2937 9.31399 23.2772 9.31399C24.2606 9.31399 25.0581 8.51712 25.0581 7.53444C25.0581 6.55175 24.2606 5.75489 23.2772 5.75489ZM15.3525 7.83577C11.1422 7.83577 7.72938 11.2476 7.72938 15.4545C7.72938 19.6615 11.1422 23.0716 15.3525 23.0716C19.5628 23.0716 22.9739 19.6615 22.9739 15.4545C22.9739 11.2476 19.5628 7.83577 15.3525 7.83577ZM15.3525 10.5093C21.8949 10.5093 21.9033 20.3997 15.3525 20.3997C8.81169 20.3997 8.80164 10.5093 15.3525 10.5093Z" fill="white"/>
+							</svg>
+						</a>
+					</li>
+					<li class="auth-socials__item">
+						<a href="#" class="auth-socials__link">
+							<svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.33781 11.6014L29.8638 0.5638C31.1413 0.0837965 32.2571 0.887926 31.8432 2.89701L31.8455 2.89454L27.1587 25.858C26.8114 27.486 25.8812 27.8819 24.5798 27.1149L17.4426 21.6444L14.0001 25.0934C13.6194 25.4893 13.2982 25.8233 12.5607 25.8233L13.0675 18.2695L26.2951 5.84136C26.8709 5.31435 26.1667 5.01744 25.4077 5.54198L9.06109 16.2456L2.01425 13.9594C0.484502 13.4546 0.451196 12.3684 2.33781 11.6014Z" fill="white"/>
+							</svg>
+						</a>
+					</li>
+					<li class="auth-socials__item">
+						<a href="#" class="auth-socials__link">
+							<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+									<path d="M33.318 9.68517C32.9261 8.22864 31.7777 7.08055 30.3215 6.68834C27.6608 5.96021 17.0182 5.96021 17.0182 5.96021C17.0182 5.96021 6.37589 5.96021 3.71524 6.66058C2.28699 7.05253 1.11062 8.2289 0.718671 9.68517C0.0185547 12.3456 0.0185547 17.863 0.0185547 17.863C0.0185547 17.863 0.0185547 23.4081 0.718671 26.0408C1.11088 27.497 2.25898 28.6454 3.7155 29.0376C6.4039 29.7657 17.0185 29.7657 17.0185 29.7657C17.0185 29.7657 27.6608 29.7657 30.3215 29.0653C31.778 28.6734 32.9261 27.525 33.3183 26.0688C34.0184 23.4081 34.0184 17.891 34.0184 17.891C34.0184 17.891 34.0464 12.3456 33.318 9.68517Z" fill="white"/>
+									<path d="M13.6299 22.9603L22.4798 17.8631L13.6299 12.7659V22.9603Z" fill="#1ED281"/>
+								</g>
+								<defs>
+									<clipPath id="clip0">
+										<rect width="34" height="34" fill="white" transform="translate(0.0185547 0.84668)"/>
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</main>
+
+	<script src="js/app.min.js"></script>
+ 
+</body>
+</html>

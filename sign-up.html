@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+	<meta charset="UTF-8">
+	<title>Goodwin</title>
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/app.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body>
+
+	<header class="auth-header">
+		<div class="container">
+			<a href="/" class="auth-header__logo">
+				<img src="images/logo.svg" alt="Goodwin">
+			</a>
+		</div>
+	</header>
+
+	<main class="main auth">
+		<div class="auth__container auth__container--sign-up">
+			<h1 class="auth__title">Инвестируйте вместе с автоматизированной платформой GoodWin</h1>
+			<form class="form sign-up block block--white" id="sign-up">
+				<h5 class="form__title">Регистрация</h5>
+				<div class="form__row">
+					<input type="text" class="form__input input" name="last_name" placeholder="Фамилия">
+				</div>
+				<div class="form__row">
+					<input type="text" class="form__input input" name="first_name" placeholder="Имя">
+				</div>
+				<div class="form__row">
+					<input type="email" class="form__input input" name="email" placeholder="E-mail">
+				</div>
+				<div class="form__row">
+					<input type="password" class="form__input input" name="password" id="password" placeholder="Пароль">
+				</div>
+				<div class="form__row">
+					<input type="password" class="form__input input" name="password2" placeholder="Повтор пароля">
+				</div>
+				<div class="form__row">
+					<input type="text" class="form__input input" name="user_id" placeholder="ID пригласителя">
+				</div>
+				<div class="form__row">
+					<button type="submit" class="form__submit form__submit--sign-up btn btn--green">Зарегистрироваться</button>
+				</div>
+			</form>
+			<div class="block block--black confirm-code">
+				<form class="form" id="confirm-code">
+					<h2 class="form__title">Подтверждение e-mail</h2>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="code">
+					</div>
+					<div class="form__subtext">Введите код отправленный на почту</div>
+					<div class="form__row">
+						<button class="form__submit btn btn--green">Подтвердить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<script src="js/app.min.js"></script>
+ 
+</body>
+</html>

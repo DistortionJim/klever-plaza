@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+	<meta charset="UTF-8">
+	<title>Goodwin</title>
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/app.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+ 
+<body>
+ 
+	<header class="header">
+		<div class="container">
+			<a href="/" class="header__logo">
+				<img src="images/logo.svg" alt="Goodwin">
+			</a>
+
+			<div class="header__left">
+				<div class="h-user">
+					<div class="h-user__level">
+						<span>3</span>
+						<div class="h-user__level-text">уровень</div>
+					</div>
+					<div class="h-user__left">
+						<div class="h-user__name">Константин Петров</div>
+						<div class="h-user__id">
+							<span>Id</span> 134AbbdksBcs
+						</div>
+					</div>
+				</div>
+
+				<div class="h-purses">
+					<div class="h-purse h-purse--white">
+						<div class="h-purse__btn">
+							<svg class="h-purse__icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.17285 21.122V6.32812C2.17285 4.11898 3.96371 2.32812 6.17285 2.32812H17.6495C19.8586 2.32812 21.6495 4.11899 21.6495 6.32813V7.02661" stroke="#4E4E4E" stroke-width="3"/>
+								<path d="M2.17285 7.31396V22.1079C2.17285 24.317 3.96371 26.1079 6.17285 26.1079H21.8417C24.0509 26.1079 25.8417 24.317 25.8417 22.1079V11.314C25.8417 9.10483 24.0509 7.31396 21.8417 7.31396H8.63334" stroke="#4E4E4E" stroke-width="3" stroke-linecap="round"/>
+								<path d="M21.3757 20.0068C19.5553 20.0068 18.0796 18.5311 18.0796 16.7108C18.0796 14.8904 19.5553 13.4147 21.3757 13.4147L27.2446 13.4147C27.4871 13.4147 27.6837 13.6113 27.6837 13.8538L27.6837 19.5677C27.6837 19.8102 27.4871 20.0068 27.2446 20.0068L21.3757 20.0068Z" fill="#F8F8F8" stroke="#4E4E4E" stroke-width="3"/>
+							</svg>
+
+							<svg class="h-purse__icon-chevron" width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="11.5405" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.5405 0.777344)" fill="#4E4E4E"/>
+								<rect x="22.8933" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 22.8933 12.145)" fill="#4E4E4E"/>
+							</svg>
+
+
+							<div class="h-purse-item h-purse-item--white">
+								<div class="h-purse-item__title">White-кошелек</div>
+								<div class="h-purse-item__value">1 339 999<span> GС</span></div>
+							</div>
+						</div>
+
+						<div class="h-purse__container h-purse-info">
+							<div class="h-purse-info-header">
+								<div class="h-purse-info-header__left">
+									<div class="h-purse-info-header__title">White-кошелек</div>
+									<div class="h-purse-info-header__value">
+										4 444 999<span>GC</span>
+									</div>
+									<div class="h-purse-info-header__text">Всего</div>
+								</div>
+								<div class="h-purse-info-header__right">Для участия в программах пополните White-кошелек</div>
+							</div>
+							<div class="h-purse-info-history">
+								<div class="h-purse-info-history__title">История</div>
+								<ul class="h-purse-info-history__list">
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">10 345 GC</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">1 345 $</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+									<li class="h-purse-info-history__item">
+										<div class="h-purse-info-history__value">10 345 GC</div>
+										<div class="h-purse-info-history__date">25 08 2020</div>
+									</li>
+								</ul>
+							</div>
+							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--dark btn">
+								<img src="images/icon-top-up.svg" alt="top-up">
+								Пополнить
+							</a>
+						</div>
+					</div>
+					<div class="h-purse h-purse--green">
+						<div class="h-purse__btn">
+							<svg class="h-purse__icon" width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.74902 21.122V6.32812C1.74902 4.11898 3.53988 2.32812 5.74902 2.32812H17.2256C19.4348 2.32812 21.2256 4.11899 21.2256 6.32813V7.02661" stroke="white" stroke-width="3"/>
+								<path d="M1.74902 7.31396V22.1079C1.74902 24.317 3.53989 26.1079 5.74903 26.1079H21.4179C23.6271 26.1079 25.4179 24.317 25.4179 22.1079V11.314C25.4179 9.10483 23.6271 7.31396 21.4179 7.31396H8.20951" stroke="white" stroke-width="3" stroke-linecap="round"/>
+								<path d="M20.9518 20.0068C19.1315 20.0068 17.6558 18.5311 17.6558 16.7108C17.6558 14.8904 19.1315 13.4147 20.9518 13.4147L26.8208 13.4147C27.0633 13.4147 27.2599 13.6113 27.2599 13.8538L27.2599 19.5677C27.2599 19.8102 27.0633 20.0068 26.8208 20.0068L20.9518 20.0068Z" fill="#14D279" stroke="white" stroke-width="3"/>
+							</svg>
+
+							<svg class="h-purse__icon-chevron" width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="11.709" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.709 0.777344)" fill="white"/>
+								<rect x="23.0618" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 23.0618 12.145)" fill="white"/>
+							</svg>
+
+
+							<div class="h-purse-item h-purse-item--green">
+								<div class="h-purse-item__title">Green-кошелек</div>
+								<div class="h-purse-item__value">444 999<span> GС</span></div>
+							</div>
+						</div>
+						<div class="h-purse__container h-purse-info">
+							<div class="h-purse-info-header">
+								<div class="h-purse-info-header__left">
+									<div class="h-purse-info-header__title">Green-кошелек</div>
+									<div class="h-purse-info-header__value">
+										4 444 999<span>GC</span>
+									</div>
+									<div class="h-purse-info-header__text">Всего</div>
+								</div>
+
+								<div class="h-purse-info-header__right">
+									Вся прибыль по программам и бонусам начисляется в Green-кошелек
+								</div>
+							</div>
+
+							<div class="h-purse-info-blocks">
+								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--dark">
+									<div class="h-purse-info-blocks__title">Доступно</div>
+									<div class="h-purse-info-blocks__value">325 345 GC</div>
+									<a href="#modal-withdraw-money" data-fancybox class="h-purse-info-blocks__text">
+										<img src="images/icon-withdraw.svg" alt="Вывести">
+										Вывести
+									</a>
+								</div>
+								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--light">
+									<div class="h-purse-info-blocks__title">Заморожено</div>
+									<div class="h-purse-info-blocks__value">25 345 GC</div>
+									<div class="h-purse-info-blocks__text">
+										<img src="images/icon-clock.svg" alt="icon">
+										35 дней
+									</div>
+								</div>
+							</div>
+
+							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--white btn">
+								<img src="images/icon-reinvest.svg" alt="reinvest">
+								Реинвестировать
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hamburger-menu">
+					<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="21.51" y="19.333" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 19.333)" fill="#2ADF91"/>
+						<rect x="21.51" y="10.0552" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 10.0552)" fill="#2ADF91"/>
+						<rect x="21.51" y="0.777344" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 0.777344)" fill="#2ADF91"/>
+					</svg>
+				</div>
+			</div>
+
+		</div>
+	</header>
+
+	<aside class="sidebar">
+		<div class="sidebar__close">
+			<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="15.4709" y="0.316895" width="3.65264" height="20.7284" rx="1" transform="rotate(45 15.4709 0.316895)" fill="#2ADF91"/>
+				<rect x="18.0535" y="14.9741" width="3.65264" height="20.7284" rx="1" transform="rotate(135 18.0535 14.9741)" fill="#2ADF91"/>
+			</svg>
+		</div>
+
+		<a href="/" class="sidebar__logo">
+			<img src="images/logo.svg" alt="Goodwin">
+		</a>
+
+		<div class="sidebar__inner">
+			<div class="s-user-info">
+				<div class="s-user-info__container">
+					<div class="s-user-info__name">Константин Петров</div>
+				</div>
+				<div class="s-user-info__id">
+					Id <span>134AbbdksBcs</span>
+				</div>
+			</div>
+
+			<nav class="sidebar__nav">
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-main.svg" alt="icon">
+						</span>
+							Главная
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-programs.svg" alt="icon">
+						</span>
+							Программы
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-partners.svg" alt="icon">
+						</span>
+							Партнеру
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link active">
+						<span class="menu__icon">
+							<img src="images/icon-menu-profile.svg" alt="icon">
+						</span>
+							Профиль
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">
+						<span class="menu__icon">
+							<img src="images/icon-menu-exit.svg" alt="icon">
+						</span>
+							Выйти
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="s-purses">
+				<div class="s-purse s-purse--white">
+					<div class="s-purse__title">White-кошелек</div>
+					<div class="s-purse__value">39 999<span> GС</span></div>
+					<a href="#modal-replenish-white-purse" data-fancybox class="s-purse__text">
+						<img src="images/icon-replenish.svg" alt="Пополнить">
+						Пополнить
+					</a>
+				</div>
+				<div class="s-purse s-purse--green">
+					<div class="s-purse__title">Green-кошелек</div>
+					<div class="s-purse__value">444 999<span> GC</span></div>
+					<a href="#modal-withdraw-money" data-fancybox class="s-purse__text">
+						<img src="images/icon-withdraw2.svg" alt="Вывести">
+						Вывести
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</aside>
+
+	<main class="main">
+		<div class="container">
+			<h1 class="main-title">Профиль</h1>
+			<div class="row row-profile">
+				<div class="col col-form">
+					<div class="form-block block block--white">
+						<form class="profile-form">
+							<div class="profile-form__row">
+								<div class="profile-form__icon">
+									<svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33325 13.8602C1.33325 10.9381 3.70206 8.56934 6.62414 8.56934C9.54621 8.56934 11.915 10.9381 11.915 13.8602V15.5788H1.33325V13.8602Z" stroke="#2ADF91" stroke-width="2"/>
+										<circle cx="6.62427" cy="4.93665" r="3.34387" stroke="#2ADF91" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="profile-form__input-inner">
+									<div class="profile-form__input-row">
+										<input type="text" class="profile-form__input input" value="Константин Петров" disabled>
+										<button class="profile-form__btn profile-form__btn--edit profile-form__btn--name active">
+											<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="16.5085" y="1.58594" width="4.95321" height="13.1862" transform="rotate(45 16.5085 1.58594)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+												<path d="M3.40636 18.4824L8.20386 16.8969L4.70141 13.3944L3.40636 18.4824Z" fill="white" stroke="white" stroke-linejoin="round"/>
+											</svg>
+										</button>
+										<button class="profile-form__btn profile-form__btn--save">
+											<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.37219 2.59278C1.37219 2.04049 1.81991 1.59278 2.37219 1.59278H10.6087C10.8582 1.59278 11.0988 1.6861 11.2831 1.85441L11.9575 1.11605L11.2831 1.85441L13.6761 4.04012C13.8835 4.22958 14.0017 4.49755 14.0017 4.77848V11.9219C14.0017 12.4742 13.554 12.9219 13.0017 12.9219H2.37219C1.81991 12.9219 1.37219 12.4742 1.37219 11.9219V2.59278Z" stroke="white" stroke-width="2"/>
+												<path d="M5.16748 2.59277C5.16748 2.04049 5.6152 1.59277 6.16748 1.59277H9.20639C9.75867 1.59277 10.2064 2.04049 10.2064 2.59277V6.68111C10.2064 7.2334 9.75867 7.68111 9.20639 7.68111H6.16748C5.6152 7.68111 5.16748 7.2334 5.16748 6.68111V2.59277Z" fill="white" stroke="white" stroke-width="2"/>
+											</svg>
+										</button>
+									</div>
+									<div class="profile-form__placeholder">Имя и фамилия</div>
+								</div>
+							</div>
+
+							<div class="profile-form__row">
+								<div class="profile-form__icon">
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.33844 2.10136L6.39633 7.07944C7.17473 7.84555 8.42378 7.84555 9.20217 7.07944L14.2601 2.10136" stroke="#2ADF91" stroke-width="2"/>
+										<path d="M1.15298 2.80937C1.15298 2.25709 1.6007 1.80937 2.15298 1.80937H13.398C13.9503 1.80937 14.398 2.25709 14.398 2.80937V11.4094C14.398 11.9617 13.9503 12.4094 13.398 12.4094H2.15298C1.6007 12.4094 1.15298 11.9617 1.15298 11.4094V2.80937Z" stroke="#2ADF91" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="profile-form__input-inner">
+									<div class="profile-form__input-row">
+										<input type="email" class="profile-form__input" value="konstantinpetrov@gmail.com " disabled>
+										<a href="#modal-change-email" data-fancybox class="profile-form__btn profile-form__btn--edit active">
+											<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="16.5085" y="1.58594" width="4.95321" height="13.1862" transform="rotate(45 16.5085 1.58594)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+												<path d="M3.40636 18.4824L8.20386 16.8969L4.70141 13.3944L3.40636 18.4824Z" fill="white" stroke="white" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</div>
+									<div class="profile-form__placeholder">Email</div>
+								</div>
+							</div>
+
+							<div class="profile-form__row">
+								<div class="profile-form__icon">
+									<svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.28857 8.57129C1.28857 8.01901 1.73629 7.57129 2.28857 7.57129H10.96C11.5123 7.57129 11.96 8.019 11.96 8.57129V14.6329C11.96 15.1851 11.5123 15.6329 10.96 15.6329H2.28857C1.73629 15.6329 1.28857 15.1851 1.28857 14.6329V8.57129Z" stroke="#2ADF91" stroke-width="2"/>
+										<path d="M4.10486 4.15227C4.10486 2.76081 5.23286 1.63281 6.62431 1.63281C8.01577 1.63281 9.14376 2.76081 9.14376 4.15227V7.05042C9.14376 7.14256 9.06907 7.21725 8.97693 7.21725H4.27169C4.17955 7.21725 4.10486 7.14256 4.10486 7.05042V4.15227Z" stroke="#2ADF91" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="profile-form__input-inner">
+									<div class="profile-form__input-row">
+										<input type="password" class="profile-form__input profile-form__input--email" value="12456789qwerty" disabled>
+										<button class="profile-form__show-pass">
+											<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M6.34375 12.2591C6.34375 10.0329 8.14839 8.22827 10.3745 8.22827H10.6265C12.8526 8.22827 14.6573 10.0329 14.6573 12.2591C14.6573 14.4852 12.8526 16.2898 10.6265 16.2898H10.3745C8.14839 16.2898 6.34375 14.4852 6.34375 12.2591Z" stroke="#2ADF91" stroke-width="2"/>
+												<path d="M19.3575 11.4402C14.4659 6.54857 6.53505 6.54857 1.64343 11.4402" stroke="#2ADF91" stroke-width="3"/>
+											</svg>
+										</button>
+										<a href="#modal-change-password" data-fancybox class="profile-form__btn profile-form__btn--edit active">
+											<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<rect x="16.5085" y="1.58594" width="4.95321" height="13.1862" transform="rotate(45 16.5085 1.58594)" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+												<path d="M3.40636 18.4824L8.20386 16.8969L4.70141 13.3944L3.40636 18.4824Z" fill="white" stroke="white" stroke-linejoin="round"/>
+											</svg>
+										</a>
+									</div>
+									<div class="profile-form__placeholder">Пароль</div>
+								</div>
+							</div>
+
+							<div class="profile-form__row">
+								<div class="profile-form__icon">
+									<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.30957 5.64258C1.30957 5.09029 1.75729 4.64258 2.30957 4.64258H12.9391C13.4914 4.64258 13.9391 5.09029 13.9391 5.64258V11.7041C13.9391 12.2564 13.4914 12.7041 12.9391 12.7041H2.30957C1.75729 12.7041 1.30957 12.2564 1.30957 11.7041V5.64258Z" stroke="#2ADF91" stroke-width="2"/>
+										<path d="M5.10486 2.375C5.10486 1.82272 5.55257 1.375 6.10486 1.375H9.14376C9.69605 1.375 10.1438 1.82271 10.1438 2.375V6.46334C10.1438 7.01562 9.69605 7.46334 9.14376 7.46334H6.10486C5.55257 7.46334 5.10486 7.01562 5.10486 6.46334V2.375Z" fill="white" stroke="#2ADF91" stroke-width="2"/>
+									</svg>
+								</div>
+								<div class="profile-form__input-inner">
+									<div class="profile-form__input-row">
+										<input type="text" class="profile-form__input" value="489558" disabled>
+									</div>
+									<div class="profile-form__placeholder">Ваш ID</div>
+								</div>
+							</div>
+						</form>
+
+						<div class="your-invite block block--black">
+							<div class="your-invite__head">
+								<div class="your-invite__left">
+									<div class="your-invite__title">Ваш пригласитель</div>
+									<div class="your-invite__name">Константин Петроновский</div>
+								</div>
+								<svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.45664 1.61292C5.1417 1.61292 4.07202 2.73559 4.07202 4.05053C4.07202 5.36546 5.1417 6.43514 6.45664 6.43514C7.77157 6.43514 8.84125 5.36546 8.84125 4.05053C8.8412 2.73559 7.77157 1.61292 6.45664 1.61292Z" fill="#2ADF91"/>
+									<path d="M14.4052 8.02536H3.27707C1.52361 8.02536 0.0976562 9.45132 0.0976562 11.2048V15.974C0.0976562 16.8504 0.811006 17.5637 1.68737 17.5637C1.93458 17.5637 2.89244 17.3538 3.14205 17.3037L1.74873 25.1284C1.50809 25.9713 1.99637 26.8524 2.83934 27.0938C3.71146 27.3417 4.56663 26.8303 4.80552 26.0024L6.45697 19.0327L8.10683 26.0016C8.33894 26.8089 9.23973 27.336 10.0738 27.093C10.8563 26.8699 11.4264 26.0666 11.1644 25.1291L9.63601 16.5469V11.2048H14.4052C15.2816 11.2048 15.9949 10.4915 15.9949 9.61512C15.9949 8.73876 15.2816 8.02536 14.4052 8.02536Z" fill="#2ADF91"/>
+									<path d="M21.0932 3.2559L22.9159 1.38029C23.1433 1.15284 23.2116 0.81135 23.0881 0.514054C22.9655 0.216706 22.6752 0.0234375 22.3539 0.0234375H14.4052C13.9662 0.0234375 13.6104 0.379344 13.6104 0.818292V6.43532H22.3539C22.6752 6.43532 22.9655 6.24205 23.0881 5.9447C23.2116 5.64741 23.1433 5.30586 22.9158 5.07841L21.0932 3.2559Z" fill="#2ADF91"/>
+									<path d="M14.4052 12.7942H13.6104V26.3599C13.6104 26.7993 13.9659 27.1548 14.4052 27.1548C14.8446 27.1548 15.2001 26.7993 15.2001 26.3599V12.6813C14.9445 12.7477 14.6813 12.7942 14.4052 12.7942Z" fill="#2ADF91"/>
+								</svg>
+							</div>
+							<div class="your-invite__footer">
+								<div class="your-invite__info">
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.45752 5.80176C1.45752 5.24947 1.90524 4.80176 2.45752 4.80176H13.087C13.6393 4.80176 14.087 5.24947 14.087 5.80176V11.8633C14.087 12.4156 13.6393 12.8633 13.087 12.8633H2.45752C1.90524 12.8633 1.45752 12.4156 1.45752 11.8633V5.80176Z" stroke="#2ADF91" stroke-width="2"/>
+										<path d="M5.25293 2.53418C5.25293 1.9819 5.70065 1.53418 6.25293 1.53418H9.29184C9.84412 1.53418 10.2918 1.98189 10.2918 2.53418V6.62252C10.2918 7.1748 9.84412 7.62252 9.29183 7.62252H6.25293C5.70064 7.62252 5.25293 7.1748 5.25293 6.62252V2.53418Z" fill="#3E3E3E" stroke="#2ADF91" stroke-width="2"/>
+									</svg>
+									4889558
+								</div>
+								<div class="your-invite__info">
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.28857 2.22656L6.34646 7.20464C7.12486 7.97075 8.37391 7.97075 9.15231 7.20464L14.2102 2.22656" stroke="#2ADF91" stroke-width="2"/>
+										<path d="M1.10303 2.93457C1.10303 2.38228 1.55074 1.93457 2.10303 1.93457H13.348C13.9003 1.93457 14.348 2.38228 14.348 2.93457V11.5346C14.348 12.0869 13.9003 12.5346 13.348 12.5346H2.10303C1.55074 12.5346 1.10303 12.0869 1.10303 11.5346V2.93457Z" stroke="#2ADF91" stroke-width="2"/>
+									</svg>
+									<a href="mailto:konstantin@yandex.ru">konstantin@yandex.ru</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col col-telegram">
+					<div class="block block--white telegram-bot">
+						<div class="bot-connect block block--black">
+							<h5 class="bot-connect__title">Подключение к Telegram-боту</h5>
+							<form class="bot-connect__form">
+								<div class="bot-connect__input-row">
+									<input type="text" class="bot-connect__input input">
+									<button class="bot-connect__btn btn btn--green">Подключить</button>
+								</div>
+								<div class="bot-connect__text">Введите ник от telegram</div>
+							</form>
+						</div>
+
+						<div class="send-code">
+							<form class="send-code__form">
+								<div class="send-code__input-row">
+									<input type="text" class="send-code__input input">
+									<button class="send-code__btn btn btn--green">Отправить код</button>
+								</div>
+								<div class="send-code__text">введите код из telegram</div>
+							</form>
+						</div>
+
+						<div class="telegram-security">
+							<form class="telegram-security__form">
+								<h6 class="telegram-security__title">Безопасность:</h6>
+								<div class="telegram-security__row">
+									<div class="telegram-security__col">
+										<div class="telegram-security__text">Запрашивать код при входе в  кабинет</div>
+										<label class="checkbox">
+											<input type="checkbox" name="name1" />
+											<div class="checkbox__text">
+												<span class="checkbox__no">Нет</span>
+												<span class="checkbox__yes">Да</span>
+											</div>
+										</label>
+									</div>
+									<div class="telegram-security__col">
+										<div class="telegram-security__text">Запрашивать код при выводе средств</div>
+										<label class="checkbox">
+											<input type="checkbox" name="name2" />
+											<div class="checkbox__text">
+												<span class="checkbox__no">Нет</span>
+												<span class="checkbox__yes">Да</span>
+											</div>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="modal modal--change-email block block--black" id="modal-change-email">
+		<div class="modal__inner">
+			<div class="block block--white">
+				<form class="modal__form form" id="change-email">
+					<h3 class="form__title">Смена e-mail</h3>
+					<div class="form__row">
+						<input type="email" class="form__input input" name="email">
+					</div>
+					<div class="form__subtext">Введите новый адрес электронной почты</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+					</div>
+				</form>
+			</div>
+			<form class="modal__form form" id="confirm-email">
+				<h3 class="form__title">Подтверждение e-mail</h3>
+				<div class="form__row">
+					<input type="email" class="form__input input" name="code">
+				</div>
+				<div class="form__subtext">Введите код отправленный на почту</div>
+				<div class="form__row">
+					<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal modal--change-password block block--white" id="modal-change-password">
+		<form class="modal__form form" id="change-password">
+			<h3 class="form__title">Смена пароля</h3>
+			<div class="form__row">
+				<input type="password" class="form__input input" name="password" placeholder="Введите старый пароль">
+			</div>
+			<div class="form__row">
+				<input type="password" class="form__input input" name="new_password" placeholder="Введите новый пароль">
+			</div>
+			<div class="form__row">
+				<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+			</div>
+			<div class="form__row text-center">
+				<a href="#" data-fancybox class="form__forgot-password">Забыли пароль?</a>
+			</div>
+		</form>
+	</div>
+
+	<div class="modal modal--replenish-purse block block--grey" id="modal-replenish-white-purse">
+		<form class="modal__form form" id="replenish-white-purse-btc">
+			<div class="replenish-purse">
+				<div class="replenish-purse__left">
+					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
+					<div class="replenish-purse__tab">
+						<span class="active">BTC</span><span>USDT (TRC-20)</span>
+					</div>
+					<div class="form__input-title">1 <span>GC</span> = 1$</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="replenish">
+					</div>
+					<div class="input__subtext">Введите сумму</div>
+				</div>
+				<div class="block block--white">
+					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
+					<div class="replenish-purse__value">79 999 <span>GС</span></div>
+					<div class="replenish-purse__btc">BTC <span>0.9999999</span></div>
+					<div class="replenish-purse__commission">Комиссия 3%</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
+					</div>
+
+				</div>
+			</div>
+
+		</form>
+		<form class="modal__form form" id="replenish-white-purse-usdt">
+			<div class="replenish-purse">
+				<div class="replenish-purse__left">
+					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
+					<div class="replenish-purse__tab">
+						<span>BTC</span><span class="active">USDT (TRC-20)</span>
+					</div>
+					<div class="form__input-title">1 <span>GC</span> = 1$</div>
+					<div class="form__row">
+						<input type="text" class="form__input input" name="replenish">
+					</div>
+					<div class="input__subtext">Введите сумму</div>
+				</div>
+				<div class="block block--white">
+					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
+					<div class="replenish-purse__value">78 888 <span>GС</span></div>
+					<div class="replenish-purse__btc">BTC <span>0.8888</span></div>
+					<div class="replenish-purse__commission">Комиссия 3%</div>
+					<div class="form__row">
+						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
+					</div>
+
+				</div>
+			</div>
+
+		</form>
+	</div>
+
+	<div class="modal modal--withdraw-money block block--grey" id="modal-withdraw-money">
+		<div class="modal__inner" id="withdraw-money">
+			<div class="withdraw-money">
+				<div class="block block--green">
+					<h5 class="withdraw-money__title">Доступно для вывода с<br>Green-кошелька</h5>
+					<div class="withdraw-money__value">1 579 999 <span>GC</span></div>
+					<div class="withdraw-money__commission">Комиссия 3%</div>
+					<div class="withdraw-money__subtitle">Временно заморожено</div>
+					<div class="withdraw-money__frozen">3099 <span>GC</span></div>
+					<div class="withdraw-money__text">в соответствии с условиями выплат  Вы получите уведомление о разморозке в кабинет и в Telegram</div>
+				</div>
+				<div class="withdraw-money__right">
+					<div class="withdraw-money__tab">
+						<span class="active">BTC</span><span>USDT (TRC-20)</span>
+					</div>
+					<div class="withdraw-money__forms">
+						<form class="withdraw-money__form" id="withdraw-money-btc">
+							<div class="form__row">
+								<input type="text" class="form__input input" name="purse_address">
+							</div>
+							<div class="form__subtext">адрес вашего BTC кошелька</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="withdrawal_amount">
+							</div>
+							<div class="form__subtext">Сумма вывода</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+							</div>
+						</form>
+						<form class="withdraw-money__form" id="withdraw-money-usdt">
+							<div class="form__row">
+								<input type="text" class="form__input input" name="purse_address">
+							</div>
+							<div class="form__subtext">адрес вашего USDT кошелька</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="withdrawal_amount">
+							</div>
+							<div class="form__subtext">Сумма вывода</div>
+							<div class="form__row">
+								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
+							</div>
+							<div class="form__row">
+								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="modal modal--going-to-make block block--grey" id="modal-going-to-make">
+		<div class="going-to-make">
+			<div class="going-to-make__top">
+				<div class="going-to-make__left">
+					<h5 class="going-to-make__title">Вы собираетесь<br>внести</h5>
+					<div class="going-to-make__row">
+						<div class="going-to-make__value">79 999<span> GС</span></div>
+						<div class="going-to-make__sum">
+							<div class="going-to-make__sum-text">Сумма к оплате</div>
+							<div class="going-to-make__sum-value">BTC <span>0.9999999</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="going-to-make__right block block--green">
+					<div class="going-to-make__subtitle">Для пополнения осталось</div>
+					<div class="going-to-make__time">
+						<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.66619 4.58154C3.54655 4.58154 1.01758 7.11051 1.01758 10.2302C1.01758 13.3498 3.54655 15.8788 6.66619 15.8788C9.78583 15.8788 12.3148 13.3498 12.3148 10.2302C12.3148 7.11051 9.78583 4.58154 6.66619 4.58154Z" fill="#11D076" stroke="white" stroke-width="2"/>
+							<rect x="5.00043" y="4.9292" width="4.45145" height="3.33192" rx="1.66596" transform="rotate(-90 5.00043 4.9292)" fill="white"/>
+							<rect x="2.9834" y="0.300781" width="7.36639" height="2.40288" rx="1.20144" fill="white"/>
+							<rect x="4.90454" y="10.291" width="4.20375" height="2.40288" rx="1.20144" transform="rotate(-45 4.90454 10.291)" fill="white"/>
+						</svg>
+						19:30
+					</div>
+				</div>
+			</div>
+			<div class="going-to-make-code">
+				<div class="going-to-make-code__text">Для того, чтобы пополнить баланс скопируйте адрес кошелька</div>
+				<div class="going-to-make-code__fill">
+					<button class="going-to-make-code__btn" data-link="урц5y4iovw9ucgp9suj959pecu9ugm49gz">
+						<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="5.41013" y="1.51367" width="11.1389" height="13.373" rx="3" stroke="#2ADF91" stroke-width="2"/>
+							<rect x="1.12891" y="5.8584" width="11.1389" height="13.373" rx="3" fill="white" stroke="#2ADF91" stroke-width="2"/>
+						</svg>
+					</button>
+					<div class="going-to-make-code__value">урц5y4iovw9ucgp9suj959pecu9ugm49gz</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay"></div>
+ 
+	<script src="js/app.min.js"></script>
+ 
+</body>
+</html>
