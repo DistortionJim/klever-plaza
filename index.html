@@ -1,984 +1,511 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
  
 <head>
  
 	<meta charset="UTF-8">
-	<title>Goodwin</title>
-	<meta name="viewport" content="initial-scale=1.0">
+	<title>Klever Plaza</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="css/app.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
  
 <body>
  
-	<header class="header">
-		<div class="container">
+	<header class="header header--light">
+		<div class="container-fluid d-flex justify-content-between align-items-center">
 			<a href="/" class="header__logo">
-				<img src="images/logo.svg" alt="Goodwin">
+				<img src="images/logo-light.svg" alt="Klever Plaza">
 			</a>
 
-			<div class="header__left">
-				<div class="h-user">
-					<div class="h-user__level">
-						<span>3</span>
-						<div class="h-user__level-text">уровень</div>
-					</div>
-					<div class="h-user__left">
-						<div class="h-user__name">Константин Петров</div>
-						<div class="h-user__id">
-							<span>Id</span> 134AbbdksBcs
-						</div>
-					</div>
+			<nav class="header-menu__nav top-nav">
+				<a href="#" class="top-nav__link">Location & Infrastructure</a>
+				<a href="#" class="top-nav__link">Features</a>
+				<a href="#" class="top-nav__link">Floor Plans</a>
+				<a href="#" class="top-nav__link">Characteristics</a>
+			</nav>
+
+			<div class="header-menu__top-lang lang">
+				<a href="#" class="lang__link active">EN</a>
+				<a href="#" class="lang__link">RU</a>
+			</div>
+
+			<button class="menu-btn menu-btn--light"></button>
+		</div>
+
+		<div class="header-menu">
+			<div class="header-menu__top">
+				<div class="container-fluid d-flex justify-content-between align-items-center">
+					<a href="/" class="header-menu__logo">
+						<img src="images/logo.svg" alt="Klever Plaza">
+					</a>
+
+					<button class="header-menu__btn">
+						<span>Close</span>
+						<img src="images/icon-close.svg" alt="Close">
+					</button>
 				</div>
+			</div>
 
-				<div class="h-purses">
-					<div class="h-purse h-purse--white">
-						<div class="h-purse__btn">
-							<svg class="h-purse__icon" width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M2.17285 21.122V6.32812C2.17285 4.11898 3.96371 2.32812 6.17285 2.32812H17.6495C19.8586 2.32812 21.6495 4.11899 21.6495 6.32813V7.02661" stroke="#4E4E4E" stroke-width="3"/>
-								<path d="M2.17285 7.31396V22.1079C2.17285 24.317 3.96371 26.1079 6.17285 26.1079H21.8417C24.0509 26.1079 25.8417 24.317 25.8417 22.1079V11.314C25.8417 9.10483 24.0509 7.31396 21.8417 7.31396H8.63334" stroke="#4E4E4E" stroke-width="3" stroke-linecap="round"/>
-								<path d="M21.3757 20.0068C19.5553 20.0068 18.0796 18.5311 18.0796 16.7108C18.0796 14.8904 19.5553 13.4147 21.3757 13.4147L27.2446 13.4147C27.4871 13.4147 27.6837 13.6113 27.6837 13.8538L27.6837 19.5677C27.6837 19.8102 27.4871 20.0068 27.2446 20.0068L21.3757 20.0068Z" fill="#F8F8F8" stroke="#4E4E4E" stroke-width="3"/>
-							</svg>
-
-							<svg class="h-purse__icon-chevron" width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="11.5405" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.5405 0.777344)" fill="#4E4E4E"/>
-								<rect x="22.8933" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 22.8933 12.145)" fill="#4E4E4E"/>
-							</svg>
-
-
-							<div class="h-purse-item h-purse-item--white">
-								<div class="h-purse-item__title">White-кошелек</div>
-								<div class="h-purse-item__value">1 339 999<span> GС</span></div>
-							</div>
-						</div>
-
-						<div class="h-purse__container h-purse-info">
-							<div class="h-purse-info-header">
-								<div class="h-purse-info-header__left">
-									<div class="h-purse-info-header__title">White-кошелек</div>
-									<div class="h-purse-info-header__value">
-										4 444 999<span>GC</span>
-									</div>
-									<div class="h-purse-info-header__text">Всего</div>
-								</div>
-								<div class="h-purse-info-header__right">Для участия в программах пополните White-кошелек</div>
-							</div>
-							<div class="h-purse-info-history">
-								<div class="h-purse-info-history__title">История</div>
-								<ul class="h-purse-info-history__list">
-									<li class="h-purse-info-history__item">
-										<div class="h-purse-info-history__value">10 345 GC</div>
-										<div class="h-purse-info-history__date">25 08 2020</div>
-									</li>
-									<li class="h-purse-info-history__item">
-										<div class="h-purse-info-history__value">1 345 $</div>
-										<div class="h-purse-info-history__date">25 08 2020</div>
-									</li>
-									<li class="h-purse-info-history__item">
-										<div class="h-purse-info-history__value">10 345 GC</div>
-										<div class="h-purse-info-history__date">25 08 2020</div>
-									</li>
-								</ul>
-							</div>
-							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--dark btn">
-								<img src="images/icon-top-up.svg" alt="top-up">
-								Пополнить
-							</a>
+			<div class="header-menu__container container">
+				<ul class="header-menu__list menu-list">
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link">Location</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link active">Conception</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link">Characteristics</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link">Floor Plans</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link">Infrastructure</a>
+					</li>
+				</ul>
+				<ul class="header-menu__list menu-list">
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link">News</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link">Gallery</a>
+					</li>
+					<li class="menu-list__item">
+						<a href="#" class="menu-list__link">Contact Us</a>
+					</li>
+				</ul>
+				<div class="header-menu__contacts">
+					<div class="contacts-list">
+						<a href="tel:+7 495 123 45 67" class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="images/icon-phone.svg" alt="tel">
+							</span>
+							+7 495 123 45 67
+						</a>
+						<a href="mailto:info@klever-plaza.ru" class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="images/icon-email.svg" alt="email">
+							</span>
+							info@klever-plaza.ru
+						</a>
+						<div class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="images/icon-location.svg" alt="location">
+							</span>
+							Moscow, Sosenskoye 46,<br>
+							Mamyri
 						</div>
 					</div>
-					<div class="h-purse h-purse--green">
-						<div class="h-purse__btn">
-							<svg class="h-purse__icon" width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M1.74902 21.122V6.32812C1.74902 4.11898 3.53988 2.32812 5.74902 2.32812H17.2256C19.4348 2.32812 21.2256 4.11899 21.2256 6.32813V7.02661" stroke="white" stroke-width="3"/>
-								<path d="M1.74902 7.31396V22.1079C1.74902 24.317 3.53989 26.1079 5.74903 26.1079H21.4179C23.6271 26.1079 25.4179 24.317 25.4179 22.1079V11.314C25.4179 9.10483 23.6271 7.31396 21.4179 7.31396H8.20951" stroke="white" stroke-width="3" stroke-linecap="round"/>
-								<path d="M20.9518 20.0068C19.1315 20.0068 17.6558 18.5311 17.6558 16.7108C17.6558 14.8904 19.1315 13.4147 20.9518 13.4147L26.8208 13.4147C27.0633 13.4147 27.2599 13.6113 27.2599 13.8538L27.2599 19.5677C27.2599 19.8102 27.0633 20.0068 26.8208 20.0068L20.9518 20.0068Z" fill="#14D279" stroke="white" stroke-width="3"/>
-							</svg>
+					<div class="header-menu__bottom">
+						<a href="#" class="facebook-link" target="_blank">
+							<img src="images/icon-facebook.svg" alt="facebook">
+							Facebook
+						</a>
 
-							<svg class="h-purse__icon-chevron" width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<rect x="11.709" y="0.777344" width="3.65264" height="16.0253" rx="1" transform="rotate(45 11.709 0.777344)" fill="white"/>
-								<rect x="23.0618" y="12.145" width="3.65264" height="16.076" rx="1" transform="rotate(135 23.0618 12.145)" fill="white"/>
-							</svg>
-
-
-							<div class="h-purse-item h-purse-item--green">
-								<div class="h-purse-item__title">Green-кошелек</div>
-								<div class="h-purse-item__value">444 999<span> GС</span></div>
-							</div>
-						</div>
-						<div class="h-purse__container h-purse-info">
-							<div class="h-purse-info-header">
-								<div class="h-purse-info-header__left">
-									<div class="h-purse-info-header__title">Green-кошелек</div>
-									<div class="h-purse-info-header__value">
-										4 444 999<span>GC</span>
-									</div>
-									<div class="h-purse-info-header__text">Всего</div>
-								</div>
-
-								<div class="h-purse-info-header__right">
-									Вся прибыль по программам и бонусам начисляется в Green-кошелек
-								</div>
-							</div>
-
-							<div class="h-purse-info-blocks">
-								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--dark">
-									<div class="h-purse-info-blocks__title">Доступно</div>
-									<div class="h-purse-info-blocks__value">325 345 GC</div>
-									<a href="#modal-withdraw-money" data-fancybox class="h-purse-info-blocks__text">
-										<img src="images/icon-withdraw.svg" alt="Вывести">
-										Вывести
-									</a>
-								</div>
-								<div class="h-purse-info-blocks__item h-purse-info-blocks__item--light">
-									<div class="h-purse-info-blocks__title">Заморожено</div>
-									<div class="h-purse-info-blocks__value">25 345 GC</div>
-									<div class="h-purse-info-blocks__text">
-										<img src="images/icon-clock.svg" alt="icon">
-										35 дней
-									</div>
-								</div>
-							</div>
-
-							<a href="#modal-replenish-white-purse" data-fancybox class="h-purse-info__btn h-purse-info__btn--white btn">
-								<img src="images/icon-reinvest.svg" alt="reinvest">
-								Реинвестировать
-							</a>
+						<div class="header-menu__lang lang">
+							<a href="#" class="lang__link active">EN</a>
+							<a href="#" class="lang__link">RU</a>
 						</div>
 					</div>
-				</div>
 
-				<div class="hamburger-menu">
-					<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<rect x="21.51" y="19.333" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 19.333)" fill="#2ADF91"/>
-						<rect x="21.51" y="10.0552" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 10.0552)" fill="#2ADF91"/>
-						<rect x="21.51" y="0.777344" width="3.65264" height="20.7284" rx="1" transform="rotate(90 21.51 0.777344)" fill="#2ADF91"/>
-					</svg>
 				</div>
 			</div>
 
 		</div>
 	</header>
 
-	<aside class="sidebar">
-		<div class="sidebar__close">
-			<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<rect x="15.4709" y="0.316895" width="3.65264" height="20.7284" rx="1" transform="rotate(45 15.4709 0.316895)" fill="#2ADF91"/>
-				<rect x="18.0535" y="14.9741" width="3.65264" height="20.7284" rx="1" transform="rotate(135 18.0535 14.9741)" fill="#2ADF91"/>
-			</svg>
-		</div>
-
-		<a href="/" class="sidebar__logo">
-			<img src="images/logo.svg" alt="Goodwin">
-		</a>
-
-		<div class="sidebar__inner">
-			<div class="s-user-info">
-				<div class="s-user-info__container">
-					<div class="s-user-info__name">Константин Петров</div>
-				</div>
-				<div class="s-user-info__id">
-					Id <span>134AbbdksBcs</span>
-				</div>
-			</div>
-
-			<nav class="sidebar__nav">
-				<ul class="menu">
-					<li class="menu__item">
-						<a href="#" class="menu__link active">
-						<span class="menu__icon">
-							<img src="images/icon-menu-main.svg" alt="icon">
-						</span>
-							Главная
-						</a>
-					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">
-						<span class="menu__icon">
-							<img src="images/icon-menu-programs.svg" alt="icon">
-						</span>
-							Программы
-						</a>
-					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">
-						<span class="menu__icon">
-							<img src="images/icon-menu-partners.svg" alt="icon">
-						</span>
-							Партнеру
-						</a>
-					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">
-						<span class="menu__icon">
-							<img src="images/icon-menu-profile.svg" alt="icon">
-						</span>
-							Профиль
-						</a>
-					</li>
-					<li class="menu__item">
-						<a href="#" class="menu__link">
-						<span class="menu__icon">
-							<img src="images/icon-menu-exit.svg" alt="icon">
-						</span>
-							Выйти
-						</a>
-					</li>
-				</ul>
-			</nav>
-
-			<div class="s-purses">
-				<div class="s-purse s-purse--white">
-					<div class="s-purse__title">White-кошелек</div>
-					<div class="s-purse__value">39 999<span> GС</span></div>
-					<a href="#modal-replenish-white-purse" data-fancybox class="s-purse__text">
-						<img src="images/icon-replenish.svg" alt="Пополнить">
-						Пополнить
-					</a>
-				</div>
-				<div class="s-purse s-purse--green">
-					<div class="s-purse__title">Green-кошелек</div>
-					<div class="s-purse__value">444 999<span> GC</span></div>
-					<a href="#modal-withdraw-money" data-fancybox class="s-purse__text">
-						<img src="images/icon-withdraw2.svg" alt="Пополнить">
-						Вывести
-					</a>
-				</div>
-			</div>
-
-		</div>
-
-
-
-	</aside>
 
 	<main class="main">
-		<div class="container">
-			<div class="row">
-				<div class="col col-md-50 col-lg-66">
-					<div class="row">
-						<div class="col col-lg-50">
-							<div class="b-to block block--white">
-								<div class="b-to__left">
-									<h4 class="b-to__title">Общий ТО</h4>
-									<div class="b-to__value">23 333 999<span> GC</span></div>
-									<div class="b-to__subtext">Всего</div>
-									<div class="b-to-indicators">
-										<div class="b-to-indicators__item">
-											12 345
-											<span class="unit">GC /</span>
-											<span class="period">месяц</span>
-										</div>
-										<div class="b-to-indicators__item">
-											325 345
-											<span class="unit">GC /</span>
-											<span class="period">год</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="b-to__right">
-									<div class="b-to__percentage">
-										<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect x="2.51654" y="9.9751" width="6.28344" height="2.30029" rx="1.15015" transform="rotate(-90 2.51654 9.9751)" fill="#2ADF91"/>
-											<path d="M2.8548 0.553273C3.25382 -0.00177187 4.0797 -0.00177306 4.47872 0.553271L6.80881 3.79447C7.28441 4.45602 6.81163 5.37818 5.99686 5.37818L1.33666 5.37818C0.521894 5.37818 0.0491108 4.45602 0.524704 3.79447L2.8548 0.553273Z" fill="#2ADF91"/>
-										</svg>
-										+22,2%
-									</div>
-									<svg class="b-to__chart" width="61" height="59" viewBox="0 0 61 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1.66681 56.7027L10.219 34.1033C11.1699 31.5906 14.2782 30.7111 16.4047 32.353L18.3485 33.8539C20.3085 35.3673 23.1588 34.7543 24.3233 32.5688L27.6577 26.3109C29.2524 23.3181 33.614 23.5428 34.8926 26.6836L39.8062 38.753C41.2193 42.2239 46.2013 42.0203 47.3264 38.4458L58.8477 1.84375" stroke="#2ADF91" stroke-width="3" stroke-linecap="round"/>
+		<section class="main-hero main-hero--first">
+			<div class="container-fluid">
+				<div class="main-hero__top">
+					<div class="main-hero__content">
+						<h1 class="main-hero__title">Class A<br>Business Center</h1>
+						<p class="main-hero__text">The business center “Klever Plaza” is the first object of the future business park from an international developer</p>
+					</div>
+					<ul class="hero-video">
+						<li class="hero-video__item">
+							<a data-fancybox href="https://www.youtube.com/watch?v=Zv11L-ZfrSg&ab_channel=8KVIDEOSULTRAHD" class="hero-video__link" target="_blank">
+								<span class="hero-video__icon">
+									<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="28" cy="28" r="28" fill="#A7D74A"/>
+										<circle cx="28" cy="28" r="18" fill="#A7D74A"/>
+										<path d="M21.2734 26.4453H22.4297C23.013 26.4401 23.474 26.2891 23.8125 25.9922C24.1562 25.6953 24.3281 25.2656 24.3281 24.7031C24.3281 24.1615 24.1849 23.7422 23.8984 23.4453C23.6172 23.1432 23.1849 22.9922 22.6016 22.9922C22.0911 22.9922 21.6719 23.1406 21.3438 23.4375C21.0156 23.7292 20.8516 24.112 20.8516 24.5859H18.9531C18.9531 24.0026 19.1068 23.4714 19.4141 22.9922C19.7266 22.513 20.1589 22.1406 20.7109 21.875C21.2682 21.6042 21.8906 21.4688 22.5781 21.4688C23.7135 21.4688 24.6042 21.7552 25.25 22.3281C25.901 22.8958 26.2266 23.6875 26.2266 24.7031C26.2266 25.2135 26.0625 25.6953 25.7344 26.1484C25.4115 26.5964 24.9922 26.9349 24.4766 27.1641C25.1016 27.3776 25.5755 27.7135 25.8984 28.1719C26.2266 28.6302 26.3906 29.1771 26.3906 29.8125C26.3906 30.8333 26.0391 31.6458 25.3359 32.25C24.638 32.8542 23.7188 33.1562 22.5781 33.1562C21.4844 33.1562 20.5885 32.8646 19.8906 32.2812C19.1927 31.6979 18.8438 30.9219 18.8438 29.9531H20.7422C20.7422 30.4531 20.9089 30.8594 21.2422 31.1719C21.5807 31.4844 22.0339 31.6406 22.6016 31.6406C23.1901 31.6406 23.6536 31.4844 23.9922 31.1719C24.3307 30.8594 24.5 30.4062 24.5 29.8125C24.5 29.2135 24.3229 28.7526 23.9688 28.4297C23.6146 28.1068 23.0885 27.9453 22.3906 27.9453H21.2734V26.4453ZM28.4766 33V21.625H31.8359C32.8411 21.625 33.7318 21.849 34.5078 22.2969C35.2891 22.7448 35.8932 23.3802 36.3203 24.2031C36.7474 25.026 36.9609 25.9688 36.9609 27.0312V27.6016C36.9609 28.6797 36.7448 29.6276 36.3125 30.4453C35.8854 31.263 35.2734 31.8932 34.4766 32.3359C33.6849 32.7786 32.776 33 31.75 33H28.4766ZM30.4531 23.2188V31.4219H31.7422C32.7786 31.4219 33.5729 31.099 34.125 30.4531C34.6823 29.8021 34.9661 28.8698 34.9766 27.6562V27.0234C34.9766 25.7891 34.7083 24.8464 34.1719 24.1953C33.6354 23.5443 32.8568 23.2188 31.8359 23.2188H30.4531Z" fill="white"/>
 									</svg>
-									<a href="#" class="b-to__btn">Статистика</a>
-								</div>
-							</div>
-						</div>
-						<div class="col col-lg-50">
-							<div class="b-to b-to--green block block--green">
-								<div class="b-to__left">
-									<h4 class="b-to__title">Общий ТО</h4>
-									<div class="b-to__value">23 333 999<span> GC</span></div>
-									<div class="b-to__subtext">Всего</div>
-									<div class="b-to-indicators">
-										<div class="b-to-indicators__item">
-											12 345
-											<span class="unit">GC /</span>
-											<span class="period">месяц</span>
-										</div>
-										<div class="b-to-indicators__item">
-											325 345
-											<span class="unit">GC /</span>
-											<span class="period">год</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="b-to__right">
-									<div class="b-to__percentage">
-										<svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect x="4.90228" y="0.444824" width="6.28344" height="2.30029" rx="1.15015" transform="rotate(90 4.90228 0.444824)" fill="#FD6E6E"/>
-											<path d="M4.56402 9.86665C4.165 10.4217 3.33913 10.4217 2.94011 9.86665L0.61001 6.62546C0.134417 5.9639 0.607199 5.04174 1.42197 5.04174L6.08216 5.04174C6.89693 5.04174 7.36971 5.9639 6.89412 6.62545L4.56402 9.86665Z" fill="#FD6E6E"/>
-										</svg>
-										-12,2%
-									</div>
-									<svg class="b-to__chart" width="67" height="50" viewBox="0 0 67 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M1.9024 47.7026L9.4307 21.0624C10.2506 18.1609 13.9074 17.2403 16.0035 19.4076V19.4076C17.9765 21.4477 21.3973 20.772 22.4466 18.135L27.7881 4.71063C28.3938 3.18844 29.8664 2.18945 31.5047 2.18945H37.6126C39.0312 2.18945 40.3436 2.94075 41.0619 4.16399L51.4076 21.7823C52.1259 23.0055 53.4384 23.7568 54.8569 23.7568H65.3257" stroke="#ACFFDB" stroke-width="3" stroke-linecap="round"/>
+								</span>
+								<span class="hero-video__title">Video Tour</span>
+							</a>
+						</li>
+						<li class="hero-video__item">
+							<a data-fancybox href="https://www.youtube.com/watch?v=pdpT8X19mRs&ab_channel=LostLeBlanc" class="hero-video__link" target="_blank">
+								<span class="hero-video__icon">
+									<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.15" cx="28" cy="28" r="28" fill="#A7D74A"/>
+										<circle cx="28" cy="28" r="18" fill="#A7D74A"/>
+										<path d="M33.4999 27.134C34.1665 27.5189 34.1665 28.4811 33.4999 28.866L25.9999 33.1962C25.3332 33.5811 24.4999 33.0999 24.4999 32.3301L24.4999 23.6699C24.4999 22.9001 25.3332 22.4189 25.9999 22.8038L33.4999 27.134Z" fill="white"/>
 									</svg>
-
-									<a href="#" class="b-to__btn">Статистика</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="block block--black m-passive">
-						<h4 class="m-passive__title">Выход на пассив</h4>
-						<div class="m-passive__info">
-							<div class="m-passive__info-item">
-								<div class="m-passive__info-value">
-									199 999<span> GС</span>
-								</div>
-								<div class="m-passive__subtext">Инвестировано</div>
-							</div>
-							<div class="m-passive__info-item">
-								<div class="m-passive__info-value">
-									999<span> GС</span>
-								</div>
-								<div class="m-passive__subtext">Выведено</div>
-							</div>
-						</div>
-						<div class="m-passive__text">
-							Вся прибыль по программам и бонусам начисляется в Green-кошелек
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col col-lg-50">
-							<div class="m-purses">
-								<div class="m-purse m-purse--white">
-									<div class="m-purse__top">
-										<h5 class="m-purse__title">White-кошелек</h5>
-										<div class="m-purse__value">29 999<span> GС</span></div>
-										<div class="m-purse__subtext">Всего</div>
-
-										<div class="m-purses-history">
-											<div class="m-purses-history__title">История</div>
-											<div class="m-purses-history__list">
-												<a href="#" class="m-purses-history__item">
-													<div class="m-purses-history__value">10 345 GC</div>
-													<div class="m-purses-history__date">25 08 2020</div>
-												</a>
-												<a href="#" class="m-purses-history__item">
-													<div class="m-purses-history__value">1 345 $</div>
-													<div class="m-purses-history__date">12 08 2020</div>
-												</a>
-												<a href="#" class="m-purses-history__item">
-													<div class="m-purses-history__value">10 345 GC</div>
-													<div class="m-purses-history__date">25 08 2020</div>
-												</a>
-												<a href="#" class="m-purses-history__item">
-													<div class="m-purses-history__value">1 345 $</div>
-													<div class="m-purses-history__date">12 08 2020</div>
-												</a>
-												<a href="#" class="m-purses-history__item">
-													<div class="m-purses-history__value">1 345 $</div>
-													<div class="m-purses-history__date">12 08 2020</div>
-												</a>
-											</div>
-										</div>
-									</div>
-									<div class="m-purse__bottom">
-										<div class="m-purse__text">Для участия в программах пополните White-кошелек</div>
-										<a href="#modal-replenish-white-purse" data-fancybox class="m-purse__btn btn btn--dark">
-											<img src="images/icon-top-up.svg" alt="icon">
-											Пополнить
-										</a>
-									</div>
-								</div>
-								<div class="m-purse m-purse--green">
-									<div class="m-purse__top">
-										<h5 class="m-purse__title">Green-кошелек</h5>
-										<div class="m-purse__value">29 999<span> GС</span></div>
-										<div class="m-purse__subtext">Всего</div>
-
-										<div class="m-purse-status">
-											<div class="m-purse-status__item m-purse-status__item--dark">
-												<div class="m-purse-status__header">
-													<div class="m-purse-status__title">Доступно</div>
-													<a href="#modal-withdraw-money" data-fancybox class="m-purse-status__subtitle">Вывести</a>
-												</div>
-												<div class="m-purse-status__footer">
-													<div class="m-purse-status__value">325 345 GC</div>
-													<img src="images/icon-withdraw.svg" alt="icon">
-												</div>
-											</div>
-											<div class="m-purse-status__item m-purse-status__item">
-												<div class="m-purse-status__header">
-													<div class="m-purse-status__title">Заморожено</div>
-													<div class="m-purse-status__subtitle">35 дней</div>
-												</div>
-												<div class="m-purse-status__footer">
-													<div class="m-purse-status__value">25 345 GC</div>
-													<img src="images/icon-clock.svg" alt="icon">
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<div class="m-purse__bottom">
-										<div class="m-purse__text">Для участия в программах пополните White-кошелек</div>
-										<a href="#modal-replenish-white-purse" data-fancybox class="m-purse__btn btn btn--white">
-											<img src="images/icon-reinvest.svg" alt="icon">
-											Реинвестировать
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="block block--black copy-referral">
-								<div class="copy-referral__title">
-									Реферальная<br>ссылка
-								</div>
-								<div class="copy-referral__btn-wrap">
-									<button class="copy-referral__btn btn btn--white" data-link="https://www.google.com.ua/?hl=ru">
-										<img src="images/icon-copy.svg" alt="icon">
-										Копировать ссылку
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col col-lg-50">
-							<div class="block block--white m-programs">
-								<div class="m-programs__left">
-									<div class="m-programs__title">В программах</div>
-									<div class="m-programs__value">89 999<span> GС</span></div>
-									<div class="m-programs__date">Окончание <span>24</span> апреля</div>
-								</div>
-								<div class="m-programs__right">
-									<div class="m-programs__title">
-										<span>12</span>
-										<span>программ<br>запущено</span>
-									</div>
-									<a href="#" class="m-programs__link">
-										<img src="images/icon-programs-2.svg" alt="icon">
-										Смотреть все
-									</a>
-								</div>
-							</div>
-
-							<div class="m-programs-slider">
-								<div class="m-programs-slider__item block block--white">
-									<div class="m-programs-slider__top">
-										<div class="m-programs-slider__title">Название программы</div>
-										<div class="m-programs-slider__num">1</div>
-									</div>
-									<div class="m-programs-slider__bottom">
-										<div class="m-programs-slider__date">бессрочно</div>
-										<div class="m-programs-slider__value"><span>12%</span> доход</div>
-									</div>
-								</div>
-								<div class="m-programs-slider__item m-programs-slider__item--disabled block block--white">
-									<div class="m-programs-slider__top">
-										<div class="m-programs-slider__icon-soon">
-											<img src="images/icon-clock-3.svg" alt="icon">
-										</div>
-										<div class="m-programs-slider__num">2</div>
-									</div>
-									<div class="m-programs-slider__bottom">
-										<div class="m-programs-slider__soon">Скоро</div>
-									</div>
-								</div>
-								<div class="m-programs-slider__item m-programs-slider__item--disabled block block--white">
-									<div class="m-programs-slider__top">
-										<div class="m-programs-slider__icon-soon">
-											<img src="images/icon-clock-3.svg" alt="icon">
-										</div>
-										<div class="m-programs-slider__num">3</div>
-									</div>
-									<div class="m-programs-slider__bottom">
-										<div class="m-programs-slider__soon">Скоро</div>
-									</div>
-								</div>
-								<div class="m-programs-slider__item m-programs-slider__item--disabled block block--white">
-									<div class="m-programs-slider__top">
-										<div class="m-programs-slider__icon-soon">
-											<img src="images/icon-clock-3.svg" alt="icon">
-										</div>
-										<div class="m-programs-slider__num">3</div>
-									</div>
-									<div class="m-programs-slider__bottom">
-										<div class="m-programs-slider__soon">Скоро</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="m-bonuses block block--white">
-								<h4 class="m-bonuses__title">Бонусы за все время</h4>
-								<div class="m-bonuses__value">179 999<span> GС</span></div>
-
-								<div class="m-bonuses-list">
-									<div class="m-bonuses-list__item">
-										<img src="images/icon-partners.svg" class="m-bonuses-list__icon" alt="icon">
-										<div class="m-bonuses-list__inner">
-											<div class="m-bonuses-list__title">Partner</div>
-											<div class="m-bonuses-list__value">19 999<span> GС</span></div>
-										</div>
-									</div>
-									<div class="m-bonuses-list__item">
-										<img src="images/icon-profit.svg" class="m-bonuses-list__icon" alt="icon">
-										<div class="m-bonuses-list__inner">
-											<div class="m-bonuses-list__title">Profit</div>
-											<div class="m-bonuses-list__value">19 999<span> GС</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-
+								</span>
+								<span class="hero-video__title">Drone Video</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#hero-bottom" class="main-hero__down">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.59 8.29492L12 12.8749L7.41 8.29492L6 9.70492L12 15.7049L18 9.70492L16.59 8.29492Z" fill="white"/>
+							<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="6" y="8" width="12" height="8">
+								<path d="M16.59 8.29492L12 12.8749L7.41 8.29492L6 9.70492L12 15.7049L18 9.70492L16.59 8.29492Z" fill="white"/>
+							</mask>
+							<g mask="url(#mask0)">
+							</g>
+						</svg>
+					</a>
 				</div>
-				<div class="col col-md-50 col-lg-33">
-					<div class="block block--black m-people">
-						<div class="m-people__item">
-							<h4 class="m-people__title">В команде</h4>
-							<div class="m-people__quantity">41</div>
-							<div class="m-people__subtext">Личных</div>
+				<nav class="main-hero__bottom hero-nav" id="hero-bottom">
+					<a href="#" class="hero-nav__link">
+						<span class="hero-nav__icon">
+							<img src="images/nav-icons/icon-highway.svg" alt="Highway">
+						</span>
+						<span class="hero-nav__title">Along Kaluga Highway</span>
+					</a>
+					<a href="#" class="hero-nav__link">
+						<span class="hero-nav__icon">
+							<img src="images/nav-icons/icon-metro.svg" alt="metro">
+						</span>
+						<span class="hero-nav__title">In front of the metro station</span>
+					</a>
+					<a href="#" class="hero-nav__link">
+						<span class="hero-nav__icon">
+							<img src="images/nav-icons/icon-mega.svg" alt="mega">
+						</span>
+						<span class="hero-nav__title">Mega mall and petrol station near walking distance</span>
+					</a>
+					<a href="#" class="hero-nav__link">
+						<span class="hero-nav__icon">
+							<img src="images/nav-icons/icon-mkad.svg" alt="mkad">
+						</span>
+						<span class="hero-nav__title">1 km from MKAD</span>
+					</a>
+					<a href="#" class="hero-nav__link">
+						<span class="hero-nav__icon">
+							<img src="images/nav-icons/icon-parking.svg" alt="parking">
+						</span>
+						<span class="hero-nav__title">Parking</span>
+					</a>
+					<a href="#" class="hero-nav__link">
+						<span class="hero-nav__icon">
+							<img src="images/nav-icons/icon-sport.svg" alt="sport">
+						</span>
+						<span class="hero-nav__title">Sport Recreation Boutiques areas</span>
+					</a>
+				</nav>
+			</div>
+		</section>
+
+		<section class="main-hero main-hero--second">
+			<div class="container-fluid">
+				<h2 class="main-hero__title">Kaluga Highway</h2>
+				<p class="main-hero__subtext">Transportation? We've got that.<br>
+					Commute by Bike, Bus, Metro or Car.</p>
+				<a href="#" class="btn btn--light"><span>Explore map</span></a>
+			</div>
+		</section>
+
+		<section class="main-hero main-hero--third">
+			<div class="container-fluid">
+				<h2 class="main-hero__title">Subway Station<br>
+					Mamyri</h2>
+				<p class="main-hero__subtext">Transportation? We've got that.<br>
+					Commute by Bike, Bus, Metro or Car.</p>
+				<a href="#" class="btn btn--light"><span>Read more</span></a>
+			</div>
+		</section>
+
+		<div class="main-info">
+			<div class="container-fluid text-center">
+				<div class="main-info__logo">
+					<img src="images/logo.svg" alt="Klever plaza">
+				</div>
+				<p class="main-info__text">
+					Klever Plaza is perfectly situated in New Moscow - one of the fastest growing areas of Moscow. A sustainable neighborhood which offers shops, restaurants, entertainment and green space. Within walking distance there are:
+				</p>
+				<ul class="logo-list">
+					<li class="logo-list__item">
+						<div class="logo-list__img">
+							<img data-src="images/logos/mega.png" class="lazyload" alt="Mega">
 						</div>
-						<div class="m-people__item">
-							<h4 class="m-people__title">
-								<svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M10.2711 12.3847C10.2711 10.1227 12.1048 8.28906 14.3668 8.28906C16.6287 8.28906 18.4624 10.1227 18.4624 12.3847V15.2448C18.4624 15.3153 18.4053 15.3725 18.3348 15.3725H10.3987C10.3283 15.3725 10.2711 15.3153 10.2711 15.2448V12.3847Z" fill="#2ADF91"/>
-									<path d="M0.957275 12.9415C0.957275 11.3771 2.22547 10.1089 3.78986 10.1089C5.35425 10.1089 6.62244 11.3771 6.62244 12.9415V14.8726H0.957275V12.9415Z" stroke="#2ADF91"/>
-									<rect x="7.12256" y="11.8311" width="7.30283" height="2.66614" rx="1" transform="rotate(-30 7.12256 11.8311)" fill="#2ADF91"/>
-									<circle cx="14.3665" cy="3.69647" r="3.41522" fill="#2ADF91"/>
-									<circle cx="3.79003" cy="5.8717" r="2.27893" stroke="#2ADF91"/>
-								</svg>
-								<span>Список партнеров</span>
-							</h4>
-							<div class="m-people__quantity">777</div>
-							<div class="m-people__subtext">Всего</div>
+						<p class="logo-list__text">with 150 000 m2 of shops,
+							restaurants, cinemas, Auchan</p>
+					</li>
+					<li class="logo-list__item">
+						<div class="logo-list__img">
+							<img data-src="images/logos/food-city.png" class="lazyload" alt="Food city">
+						</div>
+						<p class="logo-list__text">2500 market pavilions with food products from 53 countries</p>
+					</li>
+					<li class="logo-list__item">
+						<div class="logo-list__img">
+							<img data-src="images/logos/obi.png" class="lazyload" alt="obi">
+						</div>
+						<p class="logo-list__text">with 50 000 products for home and garden</p>
+					</li>
+					<li class="logo-list__item">
+						<div class="logo-list__img">
+							<img data-src="images/logos/ikea.png" class="lazyload" alt="ikea">
+						</div>
+						<p class="logo-list__text">with 20 000 m2 of ready-to- assemble furniture and housewares</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="main-info__map">
+				<img data-src="images/info-map.jpg" class="lazyload" alt="map">
+			</div>
+		</div>
+
+		<section class="parking section">
+			<div class="container-fluid">
+				<div class="row">
+					<h2 class="parking__title title col-lg-6">Parking</h2>
+					<p class="parking__subtext subtext col-lg-6">A below grade parking garage for 59 vehicles, ground parking for 126 vehicles and bike storage area makes arriving at work a breeze.</p>
+				</div>
+			</div>
+			<div class="slider parking-slider">
+				<div class="slider__item">
+					<img data-lazy="images/parking-1.jpg" alt="slide">
+				</div>
+				<div class="slider__item">
+					<img data-lazy="images/parking-1.jpg" alt="slide">
+				</div>
+				<div class="slider__item">
+					<img data-lazy="images/parking-1.jpg" alt="slide">
+				</div>
+				<div class="slider__item">
+					<img data-lazy="images/parking-1.jpg" alt="slide">
+				</div>
+			</div>
+		</section>
+
+		<section class="place section">
+			<div class="container-fluid">
+				<div class="row">
+					<h2 class="place__title title col-lg-6">The place to attract<br>The best talent</h2>
+					<p class="place__subtext subtext col-lg-6">The warm welcome at Klever Plaza begins with its two-story lobby and continues to restaurant, boutiques, sport and recreation areas.</p>
+				</div>
+
+				<div class="row place-list">
+					<div class="col-lg-6 col-md-6">
+						<div class="place-item">
+							<img data-src="images/place-1.jpg" class="place-item__img lazyload" alt="Atrium">
+							<div class="place-item__inner">
+								<h3 class="place-item__title">Atrium</h3>
+								<a href="#" class="place-item__btn btn btn--light"><span>Read more</span></a>
+							</div>
 						</div>
 					</div>
-
-					<div class="block block--white notification-center">
-						<div class="notification-center__header">
-							<h5 class="notification-center__title">Центр уведомлений</h5>
-							<div class="notification-center__date">
-								<button class="prev">
-									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M0.251861 4.95319C0.0192973 4.75365 0.0192968 4.39377 0.251861 4.19424L4.18455 0.820103C4.50884 0.541872 5.01013 0.772286 5.01013 1.19958L5.01013 7.94785C5.01013 8.37514 4.50884 8.60555 4.18455 8.32732L0.251861 4.95319Z" fill="#8A8888"/>
-									</svg>
-								</button>
-								<span>26 апреля</span>
-								<button class="next">
-									<svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5.15219 4.19428C5.38476 4.39381 5.38476 4.75369 5.15219 4.95322L1.2195 8.32736C0.895213 8.60559 0.393925 8.37517 0.393925 7.94789L0.393925 1.19961C0.393925 0.772322 0.895213 0.541907 1.2195 0.820138L5.15219 4.19428Z" fill="#8A8888"/>
-									</svg>
-								</button>
+					<div class="col-lg-6 col-md-6">
+						<div class="place-item">
+							<img data-src="images/place-2.jpg" class="place-item__img lazyload" alt="Relax zone">
+							<div class="place-item__inner">
+								<h3 class="place-item__title">Relax zone</h3>
+								<a href="#" class="place-item__btn btn btn--light"><span>Read more</span></a>
 							</div>
 						</div>
-
-						<div class="notification-center__list">
-							<div class="notification-item">
-								<div class="notification-item__inner">
-									<div class="notification-item__left">
-										<div class="notification-item__value positive">+ 4 345<span> GC</span></div>
-										<div class="notification-item__subtext green">(Green Wallet)</div>
-									</div>
-									<div class="notification-item__right">
-										<div class="notification-item__text">Разморозка депозита</div>
-									</div>
-								</div>
-								<div class="notification-item-footer">
-									<div class="notification-item-footer__text">
-										Переведено в Green-кошелек
-									</div>
-									<div class="notification-item-footer__inner">
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Прибыль</div>
-											<div class="notification-item-footer__value">1 245<span> GC</span></div>
-											<a href="#modal-withdraw-money" data-fancybox class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Депозит</div>
-											<div class="notification-item-footer__value">2 345<span> GC</span></div>
-											<a href="#modal-withdraw-money" data-fancybox class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-									</div>
-								</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="place-item">
+							<img data-src="images/place-3.jpg" class="place-item__img lazyload" alt="Sport courts">
+							<div class="place-item__inner">
+								<h3 class="place-item__title">Sport courts</h3>
+								<a href="#" class="place-item__btn btn btn--light"><span>Read more</span></a>
 							</div>
-							<div class="notification-item">
-								<div class="notification-item__inner">
-									<div class="notification-item__left">
-										<div class="notification-item__value positive">+ 4 345<span> GC</span></div>
-										<div class="notification-item__subtext green">(Green Wallet)</div>
-									</div>
-									<div class="notification-item__right">
-										<div class="notification-item__text">Начисление  Profit бонуса</div>
-									</div>
-								</div>
-								<div class="notification-item-footer">
-									<div class="notification-item-footer__text">
-										Переведено в Green-кошелек
-									</div>
-									<div class="notification-item-footer__inner">
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Прибыль</div>
-											<div class="notification-item-footer__value">1 245<span> GC</span></div>
-											<a href="#modal-withdraw-money" data-fancybox class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Депозит</div>
-											<div class="notification-item-footer__value">2 345<span> GC</span></div>
-											<a href="#modal-withdraw-money" data-fancybox class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="notification-item">
-								<div class="notification-item__inner">
-									<div class="notification-item__left">
-										<div class="notification-item__value negative">- 1 345<span> GC</span></div>
-										<div class="notification-item__subtext white">(White Wallet)</div>
-									</div>
-									<div class="notification-item__right">
-										<div class="notification-item__text">Заявка на вывод подана</div>
-										<div class="notification-item__date">20 08 2020</div>
-									</div>
-								</div>
-								<div class="notification-item-footer">
-									<div class="notification-item-footer__text">
-										Переведено в Green-кошелек
-									</div>
-									<div class="notification-item-footer__inner">
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Прибыль</div>
-											<div class="notification-item-footer__value">1 245<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Депозит</div>
-											<div class="notification-item-footer__value">2 345<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="notification-item">
-								<div class="notification-item__inner">
-									<div class="notification-item__left">
-										<div class="notification-item__value negative">- 1 345<span> GC</span></div>
-										<div class="notification-item__subtext white">(White Wallet)</div>
-									</div>
-									<div class="notification-item__right">
-										<div class="notification-item__text">Заявка на вывод обработана</div>
-										<div class="notification-item__date">Ожидайте поступление средств</div>
-									</div>
-								</div>
-								<div class="notification-item-footer">
-									<div class="notification-item-footer__text">
-										Переведено в Green-кошелек
-									</div>
-									<div class="notification-item-footer__inner">
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Прибыль</div>
-											<div class="notification-item-footer__value">1 245<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Депозит</div>
-											<div class="notification-item-footer__value">2 345<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="notification-item">
-								<div class="notification-item__inner">
-									<div class="notification-item__left">
-										<div class="notification-item__value positive">+ 4 345<span> GC</span></div>
-										<div class="notification-item__subtext green">(Green Wallet)</div>
-									</div>
-									<div class="notification-item__right">
-										<div class="notification-item__text">Поступление</div>
-									</div>
-								</div>
-								<div class="notification-item-footer">
-									<div class="notification-item-footer__text">
-										Переведено в Green-кошелек
-									</div>
-									<div class="notification-item-footer__inner">
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Прибыль</div>
-											<div class="notification-item-footer__value">1 245<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Депозит</div>
-											<div class="notification-item-footer__value">2 345<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="notification-banner">
-								<div class="notification-banner__left">
-									<img src="images/banner-image-1.svg" alt="banner">
-								</div>
-								<div class="notification-banner__right">
-									<div class="notification-banner__text">Поздравляем вы выиграли промоушен</div>
-									<h6 class="notification-banner__title">Apple Magic</h6>
-								</div>
-							</div>
-							<div class="notification-banner">
-								<div class="notification-banner__left">
-									<img src="images/banner-image-2.svg" alt="banner">
-								</div>
-								<div class="notification-banner__right">
-									<div class="notification-banner__text">Поздравляем вы вышли на</div>
-									<h6 class="notification-banner__title">Пассивный доход!</h6>
-								</div>
-							</div>
-							<div class="notification-item">
-								<div class="notification-item__inner">
-									<div class="notification-item__left">
-										<div class="notification-item__value positive">+ 4 345<span> GC</span> <span class="percent">0,35%</span></div>
-										<div class="notification-item__subtext green">(Green Wallet)</div>
-									</div>
-									<div class="notification-item__right">
-										<div class="notification-item__text">Ежедневный доход программы 7%</div>
-									</div>
-								</div>
-								<div class="notification-item-footer">
-									<div class="notification-item-footer__text">
-										Переведено в Green-кошелек
-									</div>
-									<div class="notification-item-footer__inner">
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Прибыль</div>
-											<div class="notification-item-footer__value">1 245<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-										<div class="notification-item-footer__item">
-											<div class="notification-item-footer__subtitle">Депозит</div>
-											<div class="notification-item-footer__value">2 345<span> GC</span></div>
-											<a href="#" class="notification-item-footer__btn">
-												<img src="images/icon-withdraw3.svg" alt="icon">
-												<span>Вывести</span>
-											</a>
-										</div>
-									</div>
-								</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="place-item">
+							<img data-src="images/place-4.jpg" class="place-item__img lazyload" alt="Fitness">
+							<div class="place-item__inner">
+								<h3 class="place-item__title">Fitness</h3>
+								<a href="#" class="place-item__btn btn btn--light"><span>Read more</span></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<div class="features section">
+			<div class="container">
+				<p class="features__desc">
+					The floor area with 8,4 m pitch of columns and generous floor-to-floor heights offers easy planning. Klever Plaza also provides optimum infrastructure to support the business.
+				</p>
+
+				<a href="#" class="features__btn btn btn--light-green"><span>Explore Features</span></a>
+			</div>
+
+			<div class="slider features-slider">
+				<div class="slider__item">
+					<img data-lazy="images/features-1.jpg" alt="slide">
+				</div>
+				<div class="slider__item">
+					<img data-lazy="images/features-1.jpg" alt="slide">
+				</div>
+				<div class="slider__item">
+					<img data-lazy="images/features-1.jpg" alt="slide">
+				</div>
+				<div class="slider__item">
+					<img data-lazy="images/features-1.jpg" alt="slide">
+				</div>
+			</div>
+
 		</div>
+
+		<section class="contacts section">
+			<div class="container">
+				<h2 class="contacts__title title">Contact us</h2>
+				<div class="contacts__list contacts-list">
+					<a href="tel:+7 495 123 45 67" class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="images/icon-phone.svg" alt="tel">
+							</span>
+						+7 495 123 45 67
+					</a>
+					<a href="mailto:info@klever-plaza.ru" class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="images/icon-email.svg" alt="email">
+							</span>
+						info@klever-plaza.ru
+					</a>
+					<div class="contacts-list__item">
+							<span class="contacts-list__icon">
+								<img src="images/icon-location.svg" alt="location">
+							</span>
+						Moscow, Sosenskoye 46, Mamyri
+					</div>
+				</div>
+			</div>
+
+			<div class="contacts__map" id="map"></div>
+
+			<section class="request section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<h2 class="request__title title">Leave a request, we will contact you</h2>
+						</div>
+						<div class="col-lg-6">
+							<form class="request__form">
+								<div class="row">
+									<div class="col-md-6 col-lg-6">
+										<div class="form-group">
+											<img src="images/icon-user.svg" alt="name">
+											<input type="text" class="form-control input" name="name" placeholder="Name">
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-6">
+										<div class="form-group">
+											<img src="images/icon-phone-2.svg" alt="phone">
+											<input type="text" class="form-control input" name="phone" placeholder="Phone">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<button class="request__btn btn btn--green"><span>Send</span></button>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<footer class="footer">
+			<div class="container-fluid footer__container">
+				<nav class="footer__nav">
+					<a data-fancybox href="https://www.youtube.com/watch?v=Zv11L-ZfrSg&ab_channel=8KVIDEOSULTRAHD" class="footer__item">Video Tour</a>
+					<a href="#" class="footer__item">Location & Infrastructure</a>
+					<a href="#" class="footer__item">Features</a>
+					<a href="#" class="footer__item">Floor Plans</a>
+					<a href="#" class="footer__item">Characteristics</a>
+				</nav>
+				<div class="footer__copyright">
+					© 2021 Klever Plaza. All rights reserved.
+				</div>
+			</div>
+		</footer>
+
+
 	</main>
 
-	<div class="modal modal--replenish-purse block block--grey" id="modal-replenish-white-purse">
-		<form class="modal__form form" id="replenish-white-purse-btc">
-			<div class="replenish-purse">
-				<div class="replenish-purse__left">
-					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
-					<div class="replenish-purse__tab">
-						<span class="active">BTC</span><span>USDT (TRC-20)</span>
-					</div>
-					<div class="form__input-title">1 <span>GC</span> = 1$</div>
-					<div class="form__row">
-						<input type="text" class="form__input input" name="replenish">
-					</div>
-					<div class="input__subtext">Введите сумму</div>
-				</div>
-				<div class="block block--white">
-					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
-					<div class="replenish-purse__value">79 999 <span>GС</span></div>
-					<div class="replenish-purse__btc">BTC <span>0.9999999</span></div>
-					<div class="replenish-purse__commission">Комиссия 3%</div>
-					<div class="form__row">
-						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
-					</div>
-
-				</div>
-			</div>
-
-		</form>
-		<form class="modal__form form" id="replenish-white-purse-usdt">
-			<div class="replenish-purse">
-				<div class="replenish-purse__left">
-					<h3 class="form__title">Пополнение<br>White-кошелька</h3>
-					<div class="replenish-purse__tab">
-						<span>BTC</span><span class="active">USDT (TRC-20)</span>
-					</div>
-					<div class="form__input-title">1 <span>GC</span> = 1$</div>
-					<div class="form__row">
-						<input type="text" class="form__input input" name="replenish">
-					</div>
-					<div class="input__subtext">Введите сумму</div>
-				</div>
-				<div class="block block--white">
-					<h5 class="replenish-purse__subtitle">Сумма к оплате</h5>
-					<div class="replenish-purse__value">78 888 <span>GС</span></div>
-					<div class="replenish-purse__btc">BTC <span>0.8888</span></div>
-					<div class="replenish-purse__commission">Комиссия 3%</div>
-					<div class="form__row">
-						<button type="submit" class="form__submit btn btn--green">Оплатить</button>
-					</div>
-
-				</div>
-			</div>
-
-		</form>
-	</div>
-
-	<div class="modal modal--withdraw-money block block--grey" id="modal-withdraw-money">
-		<div class="modal__inner" id="withdraw-money">
-			<div class="withdraw-money">
-				<div class="block block--green">
-					<h5 class="withdraw-money__title">Доступно для вывода с<br>Green-кошелька</h5>
-					<div class="withdraw-money__value">1 579 999 <span>GC</span></div>
-					<div class="withdraw-money__commission">Комиссия 3%</div>
-					<div class="withdraw-money__subtitle">Временно заморожено</div>
-					<div class="withdraw-money__frozen">3099 <span>GC</span></div>
-					<div class="withdraw-money__text">в соответствии с условиями выплат  Вы получите уведомление о разморозке в кабинет и в Telegram</div>
-				</div>
-				<div class="withdraw-money__right">
-					<div class="withdraw-money__tab">
-						<span class="active">BTC</span><span>USDT (TRC-20)</span>
-					</div>
-					<div class="withdraw-money__forms">
-						<form class="withdraw-money__form" id="withdraw-money-btc">
-							<div class="form__row">
-								<input type="text" class="form__input input" name="purse_address">
-							</div>
-							<div class="form__subtext">адрес вашего BTC кошелька</div>
-							<div class="form__row">
-								<input type="text" class="form__input input" name="withdrawal_amount">
-							</div>
-							<div class="form__subtext">Сумма вывода</div>
-							<div class="form__row">
-								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
-							</div>
-							<div class="form__row">
-								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
-							</div>
-							<div class="form__row">
-								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
-							</div>
-							<div class="form__row">
-								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
-							</div>
-						</form>
-						<form class="withdraw-money__form" id="withdraw-money-usdt">
-							<div class="form__row">
-								<input type="text" class="form__input input" name="purse_address">
-							</div>
-							<div class="form__subtext">адрес вашего USDT кошелька</div>
-							<div class="form__row">
-								<input type="text" class="form__input input" name="withdrawal_amount">
-							</div>
-							<div class="form__subtext">Сумма вывода</div>
-							<div class="form__row">
-								<input type="text" class="form__input input" name="code" placeholder="Код подтверждения">
-							</div>
-							<div class="form__row">
-								<button class="form__btn form__btn--telegram btn btn--green">Отправить в Telegram</button>
-							</div>
-							<div class="form__row">
-								<button class="form__btn form__btn--email btn btn--green">Отправить на email</button>
-							</div>
-							<div class="form__row">
-								<button type="submit" class="form__submit btn btn--green">Подтвердить</button>
-							</div>
-						</form>
-					</div>
-
-				</div>
-			</div>
-
+	<div class="modal modal--thanks" id="thanks-modal">
+		<div class="modal__close" data-fancybox-close>
+			<span>Close</span>
+			<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="0.00012207" y="17.7782" width="24" height="2" transform="rotate(-45 0.00012207 17.7782)" fill="#BDBDBD"/>
+				<rect x="1.41418" y="0.807617" width="24" height="2" transform="rotate(45 1.41418 0.807617)" fill="#BDBDBD"/>
+			</svg>
 		</div>
-	</div>
-
-	<div class="modal modal--going-to-make block block--grey" id="modal-going-to-make">
-		<div class="going-to-make">
-			<div class="going-to-make__top">
-				<div class="going-to-make__left">
-					<h5 class="going-to-make__title">Вы собираетесь<br>внести</h5>
-					<div class="going-to-make__row">
-						<div class="going-to-make__value">79 999<span> GС</span></div>
-						<div class="going-to-make__sum">
-							<div class="going-to-make__sum-text">Сумма к оплате</div>
-							<div class="going-to-make__sum-value">BTC <span>0.9999999</span></div>
-						</div>
-					</div>
-				</div>
-				<div class="going-to-make__right block block--green">
-					<div class="going-to-make__subtitle">Для пополнения осталось</div>
-					<div class="going-to-make__time">
-						<svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M6.66619 4.58154C3.54655 4.58154 1.01758 7.11051 1.01758 10.2302C1.01758 13.3498 3.54655 15.8788 6.66619 15.8788C9.78583 15.8788 12.3148 13.3498 12.3148 10.2302C12.3148 7.11051 9.78583 4.58154 6.66619 4.58154Z" fill="#11D076" stroke="white" stroke-width="2"/>
-							<rect x="5.00043" y="4.9292" width="4.45145" height="3.33192" rx="1.66596" transform="rotate(-90 5.00043 4.9292)" fill="white"/>
-							<rect x="2.9834" y="0.300781" width="7.36639" height="2.40288" rx="1.20144" fill="white"/>
-							<rect x="4.90454" y="10.291" width="4.20375" height="2.40288" rx="1.20144" transform="rotate(-45 4.90454 10.291)" fill="white"/>
-						</svg>
-						19:30
-					</div>
-				</div>
-			</div>
-			<div class="going-to-make-code">
-				<div class="going-to-make-code__text">Для того, чтобы пополнить баланс скопируйте адрес кошелька</div>
-				<div class="going-to-make-code__fill">
-					<button class="going-to-make-code__btn" data-link="урц5y4iovw9ucgp9suj959pecu9ugm49gz">
-						<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<rect x="5.41013" y="1.51367" width="11.1389" height="13.373" rx="3" stroke="#2ADF91" stroke-width="2"/>
-							<rect x="1.12891" y="5.8584" width="11.1389" height="13.373" rx="3" fill="white" stroke="#2ADF91" stroke-width="2"/>
-						</svg>
-					</button>
-					<div class="going-to-make-code__value">урц5y4iovw9ucgp9suj959pecu9ugm49gz</div>
-				</div>
-			</div>
+		<div class="modal__icon">
+			<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M15.8338 42.1081C16.3886 42.3417 16.1942 42.8177 16.065 43.1748C15.0638 45.9431 11.4204 53.5746 1.79522 52.9655C1.77165 52.964 1.74428 52.9508 1.71437 52.9283C0.759861 52.8837 0 52.0957 0 51.1303C0 50.1365 0.805733 49.3305 1.80004 49.3305C1.91916 49.3305 2.03575 49.3424 2.14854 49.3645C9.21308 49.9999 13.3084 44.9827 14.7341 42.8083C14.9201 42.525 15.1959 41.9007 15.8338 42.1083V42.1081ZM20.2285 16.8777C19.8653 16.5598 19.4709 16.3216 19.0618 16.1576C18.5815 15.9655 18.0782 15.874 17.5789 15.874C17.2879 15.874 17.0002 15.9039 16.7219 15.9612C16.4398 16.0195 16.1626 16.1069 15.8969 16.221C15.6265 16.3375 15.37 16.479 15.134 16.6427C14.9024 16.8036 14.6859 16.9887 14.4918 17.1952C13.7661 17.9665 13.4237 18.9725 13.4237 19.9878C13.4237 21.0515 13.7986 22.1244 14.5009 22.9509L14.5088 22.9611C14.798 23.3408 15.1784 23.782 15.6769 24.2798C16.1783 24.7804 16.8005 25.3397 17.571 25.9529L17.8176 26.149L17.571 26.3452C16.8005 26.9583 16.1783 27.5174 15.6769 28.018C15.1784 28.5158 14.798 28.9571 14.5088 29.3365L14.5009 29.3466C13.7988 30.1731 13.4237 31.246 13.4237 32.31C13.4237 33.3253 13.7659 34.3313 14.4918 35.1026C14.6859 35.3089 14.9026 35.4944 15.1343 35.6551C15.3723 35.8196 15.6285 35.9613 15.8972 36.0769C16.1626 36.1912 16.4398 36.2783 16.7217 36.3364C17.0005 36.3937 17.2879 36.4236 17.5789 36.4236C18.0784 36.4236 18.5818 36.3323 19.0621 36.14C19.4701 35.9765 19.8643 35.7387 20.2264 35.4217C23.3193 32.3328 26.4092 29.2402 29.4996 26.1488L20.2285 16.8777ZM18.0234 40.5582C17.8751 40.5663 17.7269 40.5703 17.5791 40.5703C17.0129 40.5703 16.4467 40.5105 15.8916 40.396C15.3305 40.2799 14.7833 40.1073 14.2611 39.883C13.7423 39.6602 13.2415 39.3814 12.7693 39.0514C12.304 38.7262 11.87 38.3529 11.4792 37.9375C10.7886 37.2032 10.2254 36.3356 9.84241 35.3565C9.48301 34.4375 9.28152 33.4206 9.28152 32.3242C9.28152 31.209 9.50379 30.1437 9.90679 29.1712C10.3252 28.1607 10.9381 27.2518 11.6977 26.4922C11.7948 26.3959 11.8916 26.3034 11.9871 26.2167L12.0624 26.1493L11.9879 26.0824C11.8845 25.9883 11.7874 25.8958 11.6977 25.8061C10.9381 25.0465 10.325 24.1374 9.90679 23.1281C9.50405 22.1546 9.28152 21.0891 9.28152 19.9739C9.28152 18.8774 9.48301 17.8606 9.84241 16.9415C10.2254 15.9624 10.7886 15.0951 11.4792 14.3614C11.87 13.9457 12.3037 13.5729 12.7685 13.2474C13.2395 12.9184 13.7405 12.6396 14.2611 12.4158C14.7827 12.1913 15.3302 12.0184 15.8914 11.9023C16.4469 11.7873 17.0129 11.7277 17.5789 11.7277C17.7388 11.7277 17.8992 11.7325 18.0594 11.7419C18.0513 11.5939 18.0472 11.4454 18.0472 11.2976C18.0472 10.7314 18.1071 10.1652 18.2216 9.6101C18.3377 9.04895 18.5103 8.50174 18.7346 7.97962C18.9574 7.4608 19.2362 6.95998 19.5662 6.48779C19.8914 6.02245 20.2647 5.58853 20.6801 5.19771C21.4144 4.50704 22.282 3.94387 23.2611 3.5609C24.1801 3.2015 25.1969 3 26.2934 3C27.4086 3 28.4739 3.22228 29.4464 3.62527C30.4569 4.04373 31.3658 4.65658 32.1254 5.41618C32.209 5.49982 32.3015 5.59715 32.4014 5.7074L32.4686 5.78116L32.5345 5.70766C32.6287 5.60475 32.7213 5.50768 32.8115 5.4172C33.5711 4.65658 34.4802 4.04347 35.4895 3.62527C36.463 3.22253 37.5285 3 38.6437 3C39.7402 3 40.757 3.2015 41.6761 3.5609C42.6552 3.94387 43.5225 4.50704 44.2562 5.19771C44.6719 5.58853 45.0447 6.02219 45.3702 6.48703C45.6991 6.95795 45.9779 7.45903 46.2017 7.97962C46.4263 8.50123 46.5992 9.0487 46.7153 9.60985C46.8303 10.1654 46.8899 10.7314 46.8899 11.2973C46.8899 11.4573 46.8853 11.6175 46.8757 11.7779C47.024 11.7698 47.1722 11.7657 47.32 11.7657C47.8862 11.7657 48.4524 11.8255 49.0075 11.9401C49.5686 12.0562 50.1159 12.2288 50.638 12.4531C51.1568 12.6759 51.6576 12.9547 52.1298 13.2847C52.5954 13.6101 53.0291 13.9832 53.4199 14.3986C54.1105 15.1329 54.6737 16.0005 55.0567 16.9795C55.4161 17.8986 55.6176 18.9154 55.6176 20.0119C55.6176 21.1273 55.3953 22.1926 54.9923 23.1649C54.5746 24.1736 53.9618 25.0822 53.2014 25.8426C53.1043 25.9402 53.007 26.0329 52.9112 26.1199L52.8367 26.187L52.9102 26.2529C53.0131 26.3472 53.1102 26.4397 53.2006 26.53C53.9613 27.2896 54.5744 28.1987 54.9926 29.208C55.3953 30.1815 55.6179 31.247 55.6179 32.3622C55.6179 33.4587 55.4163 34.4755 55.0569 35.3945C54.674 36.3736 54.1108 37.241 53.4201 37.9747C53.0293 38.3904 52.5957 38.7632 52.1308 39.0886C51.6602 39.4176 51.1588 39.6964 50.6382 39.9202C50.1166 40.1448 49.5692 40.3177 49.008 40.4337C48.4524 40.5488 47.8867 40.6084 47.3205 40.6084C47.1606 40.6084 47.0004 40.6038 46.84 40.5942C46.8481 40.7424 46.8521 40.8907 46.8521 41.0385C46.8521 41.6047 46.7923 42.1709 46.6777 42.726C46.5617 43.2871 46.3891 43.8343 46.1647 44.3565C45.942 44.8753 45.6632 45.3761 45.3332 45.8483C45.0077 46.3139 44.6346 46.7475 44.2192 47.1384C43.485 47.829 42.6174 48.3922 41.6383 48.7752C40.7193 49.1346 39.7024 49.3361 38.606 49.3361C37.4905 49.3361 36.4252 49.1138 35.453 48.7108C34.4442 48.2931 33.5356 47.6803 32.7752 46.9199C32.6782 46.8231 32.5857 46.7265 32.4987 46.6307L32.4311 46.5552L32.3641 46.6297C32.2701 46.7331 32.1776 46.8302 32.0879 46.9199C31.3283 47.6795 30.4191 48.2926 29.4099 48.7108C28.4363 49.1135 27.3708 49.3361 26.2556 49.3361C25.1592 49.3361 24.1423 49.1346 23.2233 48.7752C22.2442 48.3922 21.3769 47.829 20.6431 47.1384C20.2275 46.7475 19.8546 46.3139 19.5292 45.849C19.2002 45.3784 18.9214 44.877 18.6976 44.3565C18.473 43.8348 18.3002 43.2874 18.1841 42.7262C18.069 42.1707 18.0095 41.6049 18.0095 41.0387C18.0095 40.8788 18.014 40.7186 18.0237 40.5582H18.0234ZM23.1609 38.3873C22.8424 38.7508 22.6036 39.1462 22.4394 39.5555C22.2472 40.0358 22.1557 40.5392 22.1557 41.0385C22.1557 41.3294 22.1857 41.6169 22.2432 41.8957C22.3012 42.1765 22.3887 42.4535 22.5032 42.7201C22.6185 42.9891 22.76 43.2453 22.9245 43.482C23.0854 43.715 23.2704 43.9314 23.477 44.1256C24.2483 44.8512 25.2542 45.1936 26.2696 45.1936C27.3333 45.1936 28.4062 44.8188 29.2327 44.1164L29.2428 44.1086C29.6225 43.8194 30.0638 43.4389 30.5616 42.9404C31.0621 42.4393 31.6215 41.8171 32.2346 41.0463L32.4308 40.7995L32.627 41.0463C33.2401 41.8171 33.7992 42.4393 34.2998 42.9404C34.7976 43.4389 35.2388 43.8194 35.6182 44.1086L35.6284 44.1164C36.4549 44.8185 37.5278 45.1936 38.5918 45.1936C39.6071 45.1936 40.6131 44.8514 41.3843 44.1256C41.5909 43.9314 41.7762 43.7147 41.9369 43.4828C42.1011 43.2451 42.2428 42.9891 42.3584 42.7201C42.4724 42.455 42.5599 42.1778 42.6182 41.8957C42.6754 41.6174 42.7053 41.3294 42.7053 41.0385C42.7053 40.5389 42.6141 40.0356 42.4217 39.5553C42.2583 39.1472 42.0208 38.7531 41.7037 38.3909L32.4305 29.118L23.1609 38.3871V38.3873ZM44.6709 35.4582C45.0341 35.776 45.4285 36.0142 45.8375 36.1782C46.3178 36.3703 46.8212 36.4618 47.3205 36.4618C47.6115 36.4618 47.8989 36.4319 48.1777 36.3744C48.4585 36.3164 48.7355 36.2289 49.0022 36.1144C49.2711 35.999 49.5273 35.8576 49.7641 35.6931C49.997 35.5322 50.2134 35.3472 50.4076 35.1406C51.1332 34.3693 51.4756 33.3634 51.4756 32.348C51.4756 31.2843 51.1008 30.2114 50.3985 29.3849L50.3906 29.3747C50.1014 28.9953 49.721 28.5541 49.2224 28.056C48.7213 27.5555 48.0991 26.9961 47.3284 26.383L47.0815 26.1868L47.3284 25.9906C48.0991 25.3775 48.7213 24.8184 49.2224 24.3178C49.721 23.82 50.1014 23.379 50.3906 22.9993L50.3985 22.9892C51.1005 22.1627 51.4756 21.0898 51.4756 20.0258C51.4756 19.0105 51.1335 18.0045 50.4076 17.2333C50.2134 17.0267 49.9967 16.8414 49.7648 16.6807C49.5271 16.5165 49.2711 16.3748 49.0022 16.2592C48.7371 16.1452 48.4598 16.0577 48.1777 15.9994C47.8994 15.9422 47.6115 15.9122 47.3205 15.9122C46.8209 15.9122 46.3176 16.0035 45.8373 16.1959C45.4292 16.3593 45.0353 16.5968 44.6732 16.9139C41.5843 20.0068 38.4914 23.0969 35.4 26.1873L44.6709 35.4582ZM41.7415 13.9449C42.0585 13.5822 42.2963 13.1884 42.46 12.7801C42.6521 12.2998 42.7436 11.7964 42.7436 11.2971C42.7436 11.0061 42.7137 10.7185 42.6564 10.4402C42.5981 10.1581 42.5107 9.88079 42.3966 9.61517C42.28 9.34473 42.1386 9.08824 41.9749 8.85227C41.8139 8.62061 41.6289 8.40416 41.4224 8.21001C40.6511 7.48437 39.6451 7.14196 38.6298 7.14196C37.566 7.14196 36.4932 7.51682 35.6667 8.21914L35.6565 8.227C35.2771 8.51619 34.8358 8.89662 34.3378 9.39517C33.8372 9.8965 33.2778 10.5187 32.6647 11.2892L32.4683 11.5358L32.2724 11.2892C31.6595 10.5187 31.0999 9.89625 30.5996 9.39517C30.1018 8.89662 29.6608 8.51619 29.2811 8.227L29.271 8.21914C28.4445 7.51707 27.3716 7.14196 26.3076 7.14196C25.2922 7.14196 24.2863 7.48412 23.515 8.21001C23.3087 8.40416 23.1232 8.62086 22.9625 8.85252C22.798 9.09052 22.6563 9.34676 22.5407 9.61542C22.4264 9.88079 22.3392 10.1581 22.2812 10.4399C22.2239 10.7187 22.194 11.0061 22.194 11.2971C22.194 11.7967 22.2853 12.3 22.4776 12.7803C22.6411 13.1884 22.8788 13.5822 23.1959 13.9444L32.4688 23.2176L41.7415 13.9449Z" fill="#A7D74A"/>
+			</svg>
 		</div>
+		<h5 class="modal__title">Thanks for contacting us!</h5>
 	</div>
 
-	<div class="overlay"></div>
- 
+	<script src="https://maps.googleapis.com/maps/api/js?https://maps.googleapis.com/maps/api/js?key=&callback=initialise&libraries=places" async defer></script>
+
+	<script>
+		function initialise() {
+			var myLatlng = new google.maps.LatLng(55.603325, 37.473232);
+			var mapOptions = {
+				zoom: 18,
+				minZoom: 6,
+				maxZoom: 17,
+				zoomControl:true,
+				zoomControlOptions: {
+					style:google.maps.ZoomControlStyle.DEFAULT
+				},
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+			}
+			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+			var image = new google.maps.MarkerImage("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 8.33337C33.875 8.33337 20.8334 21.375 20.8334 37.5C20.8334 59.375 50 91.6667 50 91.6667C50 91.6667 79.1667 59.375 79.1667 37.5C79.1667 21.375 66.125 8.33337 50 8.33337Z' fill='%23A7D74A'/%3E%3Cpath d='M50 27.0834C44.2471 27.0834 39.5834 31.7471 39.5834 37.5C39.5834 43.253 44.2471 47.9167 50 47.9167C53.7216 47.9167 57.1604 45.9313 59.0211 42.7084C60.8819 39.4854 60.8819 35.5146 59.0211 32.2917C57.1604 29.0688 53.7216 27.0834 50 27.0834V27.0834Z' fill='white'/%3E%3C/svg%3E%0A", null, null, null, new google.maps.Size(100,100));
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				icon:image,
+				map: map,
+				title: 'Klever Plaza'
+			});
+
+			google.maps.event.addDomListener(window, 'resize', function() { map.setCenter(myLatlng); });
+		}
+		google.maps.event.addDomListener(window, 'load', initialise);
+
+	</script>
+
 	<script src="js/app.min.js"></script>
  
 </body>
